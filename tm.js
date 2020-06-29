@@ -51,7 +51,7 @@ function initLoginApp () {
 
         db_usuarios = dadosIniciais;
 
-        localStorage.setItem('db_usuarios', JSON.stringify(dadosInicias));
+        localStorage.setItem('db_usuarios', JSON.stringify(dadosIniciais));
     }
     else {
         db_usuarios = JSON.parse(usuariosJSON);
