@@ -17,7 +17,7 @@ body {background-color: #06111F ;}
 .main .container .row .card .link a { color: white;} 
 .main .container .row .card .link a:hover { color: rgb(0, 0, 0);} 
 
-.main .container .row .desc { height: 200px; position: ;}
+.main .container .row .desc { height: 200px;}
 
 div.box {
     padding: 20px;
