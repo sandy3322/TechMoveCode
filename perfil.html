@@ -115,7 +115,7 @@
                             Plano Atual: <span id="savePlano"></span>
                         </div>
                         <div class="conteudo-cartao">
-                            Código do Cartão:<span id="saveCartao"></span>
+                            Código do Cartão: <span id="saveCartao"></span>
                         </div>
                         <div class="row">
                             <div class="col-6">
@@ -202,10 +202,13 @@
             if (!usuarioCorrente.login) {
                 document.getElementById('saveNome').innerHTML = usuarioCorrente.nomeC != undefined ? usuarioCorrente.nomeC  : " ";
                 document.getElementById('saveEmail').innerHTML = usuarioCorrente.emailC != undefined ? usuarioCorrente.emailC  : " ";
-                document.getElementById('saveCartao').innerHTML = cartaoCorrente.numeroCartao != undefined ? cartaoCorrente.numeroCartao  : " ";
+                
                 /*document.getElementById('saveAv').innerHTML = avaliacao.numeroV != undefined ? avaliacao.numeroV  : " ";*/
                 document.getElementById('btn_saida').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " " ;
                 document.getElementById('btn_logout').addEventListener('click', logoutUser);  
+
+                let item = JSON.parse(localStorage.getItem('db_cartao')).cartoes[0].numeroCartao;
+                document.getElementById('saveCartao').innerHTML = item != undefined ? item  : " ";
         }   
 
         }

@@ -164,9 +164,9 @@
             event.preventDefault ();
 
             var NCard = document.getElementById('numeroCard').value;
-            var SCard = document.getElementById('senhaCard').value;
+            var SCard = document.getElementById('senhacard').value;
 
-            resultEntrar = CartaoUser (NCard, SCard);
+            resultEntrar = cartaoUser(NCard, SCard);
             if (resultEntrar) {
                 window.location.href = 'TechMove.html' /*, 'TM-Avaliação.html'*/;
             }
@@ -190,7 +190,7 @@
             //    alert('Campo em branco. Favor preenchê-lo.')
             //}
             //else {
-            adcCodigo ();
+            adcCodigo();
             alert ('Cartão gerado com sucesso. Atualize a página para ter acesso.')
            // }
         }
