@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png" />
+    <title> TECHMOVE - Usuário </title>
+    <link rel="stylesheet" href="perfil.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="TechMove.html">
+                    <center><img src="icons/logotipo.png" height="50px" weigth="50px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link active" href="#">
+                    <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="TM-Avaliação.html">
+                    <center><img src="icons/Contrato.png" height="25px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="TMregistro.html">
+                    <center><img src="icons/perfil.png" height="30px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="recarga.html">
+                    <center><img src="icons/recargapng.png" height="30px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="perfil.html">
+                    <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
+                </a>
+            </li>
+        </ul>
+        <div id="saida">
+            <span id="btn_saida"></span>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
+            style="background-color: black !important; height: 70px;">
+            <a href="TechMove.html"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
+            <form class="form-inline busca" style="width: 100 ;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Buscar"
+                    style="background-color: black; padding-right: 500px; border: 0px;">
+                <button class="btn  my-2 my-sm-0" type="submit" style="border: none; background-color: black;"><img
+                        src="icons/lupab.png" alt="" height="25px" weigth="250px"></button>
+            </form>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="background-color: black; border: none">
+                    <img src="icons/redes.png" alt="" height="30px" weigth="35px">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
+                    <a class="dropdown-item"
+                        href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/facebook.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/instagra.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/twitter.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/linkedin.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="#" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/google +.png" height="30px" weigth="35px"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="teste">
+            <h1 style="color: white;"> <span id="nomeUsuario" value="usuario" ></span></h1>
+            <!--<button id="btn_logout"></button>-->
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div id="tela"></div>
+                    <div class="trocarfoto">
+                        Coloque sua foto se ainda não houver:<input id="inputImage" type="file">
+                    </div>
+                    <div>
+                        <button id="btnSalvarImagens">Salvar</button>
+                        <button id="btnExibirImagens">Trocar</button>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="conteudo">
+                        <div class="conteudo-nome">
+                            Nome: <span id="saveNome"></span>
+                        </div>
+                        <div class="conteudo-email">
+                            E-mail: <span id="saveEmail"></span>
+                        </div>
+                        <div class="conteudo-plano">
+                            Plano Atual: <span id="savePlano"></span>
+                        </div>
+                        <div class="conteudo-cartao">
+                            Código do Cartão:<span id="saveCartao"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="TMCartao.html"><button id="cadastrar_cartao">Cadastrar código de cartão físico</button></a>
+                            </div>
+                            <div class="col-6">
+                                <button id="perda_cartao"> Perdi o meu cartão </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 avaliacoes">
+                    Suas Avaliações:
+                </div>
+                <div id="saveAv">
+
+                </div>
+            </div>
+        </div>
+        <script src="TMCartao.js"></script>
+        <script>
+            function salvarImagens() {
+                let inputImg = document.getElementById('inputImage');
+
+                if (inputImg.files && inputImg.files[0]) {
+                    var readerImg = new FileReader();
+
+                    readerImg.onload = function (img) {
+                        let imagens = [];
+
+                        // Tenta carregar o array de imagens do Local Storage
+                        let db_imgs = localStorage.getItem('db_imgs');
+                        if (db_imgs) {
+                            imagens = JSON.parse(db_imgs);
+                        }
+
+                        // Insere a imagem no array
+                        let novaImagem = { "imagem": img.target.result };
+                        imagens.push(novaImagem);
+
+                        // Salvar o array de imagens no localStorage
+                        localStorage.setItem('db_imgs', JSON.stringify(imagens));
+                    };
+
+                    readerImg.readAsDataURL(inputImg.files[0]);
+                }
+
+            }
+
+            function exibirImagens() {
+                let tela = document.getElementById('tela');
+                let textoHTML = '';
+
+                // Fazer alguma coisa montando o textoHTML
+
+                // Tenta carregar o array de imagens do Local Storage
+                let imagens = [];
+                let db_imgs = localStorage.getItem('db_imgs');
+                if (db_imgs) {
+                    imagens = JSON.parse(db_imgs);
+                };
+
+                for (i = 0; i < 1; i++) {
+                    textoHTML += `<div class="box-imagem"><img src="${imagens[i].imagem}"></div>`;
+                }
+                
+
+                // Mostrar o código na div tela
+                tela.innerHTML = textoHTML
+
+            }
+
+            botaoSalvar = document.getElementById('btnSalvarImagens');
+            botaoSalvar.addEventListener('click', salvarImagens);
+
+            botaoExibir = document.getElementById('btnExibirImagens');
+            botaoExibir.addEventListener('click', exibirImagens);
+        </script>
+        <script src="tm.js"></script>
+<!--<script src="tmav.js"></script>-->
+        <script>
+            
+            function initPage() {
+            if (!usuarioCorrente.login) {
+                document.getElementById('saveNome').innerHTML = usuarioCorrente.nomeC != undefined ? usuarioCorrente.nomeC  : " ";
+                document.getElementById('saveEmail').innerHTML = usuarioCorrente.emailC != undefined ? usuarioCorrente.emailC  : " ";
+                document.getElementById('saveCartao').innerHTML = cartaoCorrente.numeroCartao != undefined ? cartaoCorrente.numeroCartao  : " ";
+                /*document.getElementById('saveAv').innerHTML = avaliacao.numeroV != undefined ? avaliacao.numeroV  : " ";*/
+                document.getElementById('btn_saida').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " " ;
+                document.getElementById('btn_logout').addEventListener('click', logoutUser);  
+        }   
+
+        }
+        window.addEventListener('load', initPage);
+        </script>
+</body>
+
+</html>

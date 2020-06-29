@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png"/>
+    <title> TECHMOVE - Home </title>
+    <link rel="stylesheet" href="TMCartao.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="TechMove.html">
+                    <center><img src="icons/logotipo.png" height="50px" weigth="50px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link active" href="#">
+                    <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="TM-Avaliação.html">
+                    <center><img src="icons/contrato.png" height="25px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="TMRegistro.html">
+                    <center><img src="icons/perfil.png" height="30px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="recarga.html">
+                    <center><img src="icons/recargapng.png" height="30px" weigth="35px"></center>
+                </a>
+            </li>
+            <li class="nav-item ativa" style="margin-top: 20%;">
+                <a class="nav-link" href="perfil.html">
+                    <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
+                </a>
+            </li>
+        </ul>
+        <div id="saida">
+            <span id="btn_saida"></span>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
+            style="background-color: black !important; height: 70px;">
+            <a href="TechMove.html"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
+            <form class="form-inline busca" style="width: 100 ;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Buscar"
+                    style="background-color: black; padding-right: 500px; border: 0px;">
+                <button class="btn  my-2 my-sm-0" type="submit" style="border: none; background-color: black;"><img
+                        src="icons/lupab.png" alt="" height="25px" weigth="250px"></button>
+            </form>
+            <div class="dropdown">
+                
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="background-color: black; border: none">
+                    <img src="icons/redes.png" alt="" height="30px" weigth="35px">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
+                    <a class="dropdown-item" href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/facebook.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/instagra.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/twitter.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/linkedin.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item" href="#" style="background-color: black; padding-left: 27px;"><img
+                            src="icons/google +.png" height="30px" weigth="35px"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="container caixa-avaliacao">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card card1">
+                        <article class="card-body">
+                            <div class="texto">
+                                <h4 class="card-title text-left" style="font-size: 30px">
+                                <b><center>Entrar</center></b></h4>
+                            </div>
+                            <div class="col-12">
+                                <form id="form-cartao" class="form" method="POST" onsubmit="cartaoUser(this)">
+                                <div class="row">
+                                    <div class="form-group input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="text_Solicitar">
+                                            <p>Solicite seu cartão aqui!</p>
+                                        </div>
+                                        <div class="botao_Solicitar">
+                                            <button id="btn_Solicitar" type="submit" class="btn" style="color: white;" value="submit"> Solicitar
+                                            </button>
+                                        </div>
+                                        <div class="tela">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="numerocard">
+                                    <input name="numeroCard" id="numeroCard" class="form-control" placeholder="Número do Cartão" type="text-info">
+                                </div>
+                                <div class="senhacard">
+                                    <input name="senhaCard" id="senhacard" class="form-control" placeholder="Senha" type="text">    
+                                </div>
+                                <div><p style="color: white;">*A senha deve ser preenchida conforme o cadastrado na conta*</p></div>
+                                    <div class="form-group botao">
+                                        <button id="btn_Entrar" type="submit" class="btn btn-block" style="color: white;"> Entrar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-2">
+                <a class="icon" href="TechMove.html">
+                    <img class="logo" src="icons/logotipo.png" height="50px" weigth="50px">
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="icon" href="#">
+                    <img src="icons/cartao.png" height="35px" weigth="35px">
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="icon" href="#">
+                    <img src="icons/contrato.png" height="25px" weigth="35px">
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="icon" href="TMRegistro.html">
+                    <img src="icons/perfil.png" height="30px" weigth="35px">
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="icon" href="#">
+                    <img src="icons/mais.png" height="25px" weigth="35px">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="TMCartao.js"></script>
+    <script>
+        function processaFormLogin (event) {
+
+            event.preventDefault ();
+
+            var NCard = document.getElementById('numeroCard').value;
+            var SCard = document.getElementById('senhaCard').value;
+
+            resultEntrar = CartaoUser (NCard, SCard);
+            if (resultEntrar) {
+                window.location.href = 'TechMove.html' /*, 'TM-Avaliação.html'*/;
+            }
+            else {
+                if(NCard == 0 || SCard == 0){
+                    alert('Campos em branco. Favor preenchê-lo')
+                }
+                else {
+                alert ('Número do cartão ou senha incorretos.');
+                }
+            }
+        }
+        function saveCard (event) {
+            event.preventDefault ();
+
+            //let nomeC = document.getElementById('').value;
+            //let emailC = document.getElementById('emailcad').value;
+
+
+            //if (nomeC == 0 || emailC == 0 || senhaC1 == 0 || senhaC2 == 0) {
+            //    alert('Campo em branco. Favor preenchê-lo.')
+            //}
+            //else {
+            adcCodigo ();
+            alert ('Cartão gerado com sucesso. Atualize a página para ter acesso.')
+           // }
+        }
+        document.getElementById ('form-cartao').addEventListener('submit', processaFormLogin);
+        document.getElementById ('btn_Solicitar').addEventListener ('click', saveCard);
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
