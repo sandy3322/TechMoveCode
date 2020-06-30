@@ -3,273 +3,407 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png"/>
-    <title> TECHMOVE - Recarga </title>
-    <link rel="stylesheet" href="recarga.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png" />
+  <title> TECHMOVE - Recarga </title>
+  <link rel="stylesheet" href="recarga.css">
 
 </head>
 
 <body>
-    <header class="header">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="TechMove.html">
-                    <center><img src="icons/logotipo.png" height="50px" weigth="50px"></center>
-                </a>
-            </li>
-            <li class="nav-item ativa" style="margin-top: 20%;">
-                <a class="nav-link active" href="#">
-                    <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
-                </a>
-            </li>
-            <li class="nav-item ativa" style="margin-top: 20%;">
-                <a class="nav-link" href="TM-Avaliação.html">
-                    <center><img src="icons/Contrato.png" height="25px" weigth="35px"></center>
-                </a>
-            </li>
-            <li class="nav-item ativa" style="margin-top: 20%;">
-                <a class="nav-link" href="TMregistro.html">
-                    <center><img src="icons/perfil.png" height="30px" weigth="35px"></center>
-                </a>
-            </li>
-            <li class="nav-item ativa" style="margin-top: 20%;">
-                <a class="nav-link" href="recarga.html">
-                    <center><img src="icons/recargapng.png" height="30px" weigth="35px"></center>
-                </a>
-            </li>
-            <li class="nav-item ativa" style="margin-top: 20%;">
-                <a class="nav-link" href="perfil.html">
-                    <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
-                </a>
-            </li>
-        </ul>
-    </header>
-    <main class="main">
-        <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
-            style="background-color: black !important; height: 70px;">
-            <a href="TechMove.html"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
-            <form class="form-inline busca" style="width: 100 ;">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Buscar"
-                    style="background-color: black; padding-right: 500px; border: 0px;">
-                <button class="btn  my-2 my-sm-0" type="submit" style="border: none; background-color: black;"><img
-                        src="icons/lupab.png" alt="" height="25px" weigth="250px"></button>
-            </form>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    style="background-color: black; border: none">
-                    <img src="icons/redes.png" alt="" height="30px" weigth="35px">
-                </a>
+  <header class="header">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="TechMove.html">
+          <center><img src="icons/logotipo.png" height="50px" weigth="50px"></center>
+        </a>
+      </li>
+      <li class="nav-item ativa" style="margin-top: 20%;">
+        <a class="nav-link active" href="#">
+          <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
+        </a>
+      </li>
+      <li class="nav-item ativa" style="margin-top: 20%;">
+        <a class="nav-link" href="TM-Avaliação.html">
+          <center><img src="icons/Contrato.png" height="25px" weigth="35px"></center>
+        </a>
+      </li>
+      <li class="nav-item ativa" style="margin-top: 20%;">
+        <a class="nav-link" href="TMregistro.html">
+          <center><img src="icons/perfil.png" height="30px" weigth="35px"></center>
+        </a>
+      </li>
+      <li class="nav-item ativa" style="margin-top: 20%;">
+        <a class="nav-link" href="recarga.html">
+          <center><img src="icons/recargapng.png" height="30px" weigth="35px"></center>
+        </a>
+      </li>
+      <li class="nav-item ativa" style="margin-top: 20%;">
+        <a class="nav-link" href="perfil.html">
+          <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main class="main">
+    <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
+      style="background-color: black !important; height: 70px;">
+      <a href="TechMove.html"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
+      <form class="form-inline busca" style="width: 100 ;">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Buscar"
+          style="background-color: black; padding-right: 500px; border: 0px;">
+        <button class="btn  my-2 my-sm-0" type="submit" style="border: none; background-color: black;"><img
+            src="icons/lupab.png" alt="" height="25px" weigth="250px"></button>
+      </form>
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="background-color: black; border: none">
+          <img src="icons/redes.png" alt="" height="30px" weigth="35px">
+        </a>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
-                    <a class="dropdown-item"
-                        href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller"
-                        style="background-color: black; padding-left: 27px;"><img src="icons/facebook.png" height="30px"
-                            weigth="35px"></a>
-                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br"
-                        style="background-color: black; padding-left: 27px;"><img src="icons/instagra.png" height="30px"
-                            weigth="35px"></a>
-                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09"
-                        style="background-color: black; padding-left: 27px;"><img src="icons/twitter.png" height="30px"
-                            weigth="35px"></a>
-                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing"
-                        style="background-color: black; padding-left: 27px;"><img src="icons/linkedin.png" height="30px"
-                            weigth="35px"></a>
-                    <a class="dropdown-item" href="#" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/google +.png" height="30px" weigth="35px"></a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
+          <a class="dropdown-item"
+            href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller"
+            style="background-color: black; padding-left: 27px;"><img src="icons/facebook.png" height="30px"
+              weigth="35px"></a>
+          <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br"
+            style="background-color: black; padding-left: 27px;"><img src="icons/instagra.png" height="30px"
+              weigth="35px"></a>
+          <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09"
+            style="background-color: black; padding-left: 27px;"><img src="icons/twitter.png" height="30px"
+              weigth="35px"></a>
+          <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing"
+            style="background-color: black; padding-left: 27px;"><img src="icons/linkedin.png" height="30px"
+              weigth="35px"></a>
+          <a class="dropdown-item" href="#" style="background-color: black; padding-left: 27px;"><img
+              src="icons/google +.png" height="30px" weigth="35px"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="container caixa-recarga">
+      <div class="row-fluid">
+        <div class="col-lg-10 col-md-12 col-sm-10 col-xs-10">
+          <div class="card card1" style="margin-left: 150px;">
+            <article class="card-body">
+              <div class="test">
+                <h1>Valores de Recarga</h1>
+                <label for="weather">Selecione um valor: </label>
+                <select id="weather">
+                  <option value="vazio">--Escolha um valor--</option>
+                  <option value="1">R$5,00</option>
+                  <option value="2">R$10,00</option>
+                  <option value="3">R$15,00</option>
+                  <option value="4">R$20,00</option>
+                  <option value="5">R$25,00</option>
+                  <option value="6">R$50,00</option>
+                  <option value="7">R$100,00</option>
+                  <option value="8">R$200,00</option>
+                </select>
+
+                <p></p>
+                <div class="row">
+                  <button id="btnCancelar" class="btn1" onclick="cancela()">Cancelar</button>
+                  <button id="btnConfirmar" class="btn2" onclick="escolha()">Confirmar plano</button>
                 </div>
-            </div>
-        </nav>
-        <div class="container caixa-recarga">
-            <div class="row-fluid">
-                <div class="col-lg-10 col-md-12 col-sm-10 col-xs-10">
-                    <div class="card card1" style="margin-left: 150px;">
-                        <article class="card-body">                        
-                            <div class="container" style="margin-top: 30px;">
-                                <h1>Recarga</h1>
-                                <div id="calculadora" class="card">
-                                    <div class="caixa-saldo">
-                                        <p class="textoSaldo">Seu saldo: R$<span id="saldo">0</span></p>  
-                                      </div>
-                                  <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <button id="bt-1" type="button" class="btn btn-light btn-block button-text">1</button>
-                                        </div>
-                                        <div class="col">
-                                            <button id="bt-2" type="button" class="btn btn-light btn-block button-text">2</button>
-                                        </div>
-                                        <div class="col">
-                                            <button id="bt-3" type="button" class="btn btn-light btn-block button-text">3</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <button id="bt-4" type="button" class="btn btn-light btn-block button-text">4</button>
-                                        </div>
-                                        <div class="col">
-                                            <button id="bt-5" type="button" class="btn btn-light btn-block button-text">5</button>
-                                        </div>
-                                        <div class="col">
-                                            <button id="bt-6" type="button" class="btn btn-light btn-block button-text">6</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <button id="bt-7" type="button" class="btn btn-light btn-block button-text">7</button>
-                                        </div>
-                                        <div class="col">
-                                            <button id="bt-8" type="button" class="btn btn-light btn-block button-text">8</button>
-                                        </div>
-                                        <div class="col">
-                                            <button id="bt-9" type="button" class="btn btn-light btn-block button-text">9</button>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <button id="bt-0" type="button" class="btn btn-light btn-block button-text">0</button>
-                                    </div>
-                          <div class="row">
-                          <div class="col">
-                          <button
-                            id="bt-plus"
-                            type="button"
-                            class="btn btn-warning btn-block button-text"
-                          > Receber
+                <div id="conteudo">
+
+                </div>
+                <p style="margin-top: 30px;">
+                  Para escolher valores diferentes dos listados acima, clique no botão abaixo:
+                </p>
+              </div>
+              <div id="recarrega">
+                <div class="container" style="margin-top: 30px; margin: 0px 140px">
+                  <h1 style="margin-left: 135px">Recarga</h1>
+                  <div id="calculadora" class="card">
+                    <div class="caixa-saldo">
+                      <p class="textoSaldo">Valor digitado: R$<input name="sld" id="sld" class="form-control"
+                          placeholder="Valor" type="value" style="width: 300px;">
+                        <!--<span id="saldo">0</span></p>-->
+                        <button id="depositar">Depositar</button>
+                    </div>
+                    <!--<div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <button id="bt-1" type="button" class="btn btn-light btn-block button-text">1</button>
+                        </div>
+                        <div class="col">
+                          <button id="bt-2" type="button" class="btn btn-light btn-block button-text">2</button>
+                        </div>
+                        <div class="col">
+                          <button id="bt-3" type="button" class="btn btn-light btn-block button-text">3</button>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button id="bt-4" type="button" class="btn btn-light btn-block button-text">4</button>
+                        </div>
+                        <div class="col">
+                          <button id="bt-5" type="button" class="btn btn-light btn-block button-text">5</button>
+                        </div>
+                        <div class="col">
+                          <button id="bt-6" type="button" class="btn btn-light btn-block button-text">6</button>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button id="bt-7" type="button" class="btn btn-light btn-block button-text">7</button>
+                        </div>
+                        <div class="col">
+                          <button id="bt-8" type="button" class="btn btn-light btn-block button-text">8</button>
+                        </div>
+                        <div class="col">
+                          <button id="bt-9" type="button" class="btn btn-light btn-block button-text">9</button>
+                        </div>
+                      </div>
+                      <div class="">
+                        <button id="bt-0" type="button" class="btn btn-light btn-block button-text">0</button>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button id="bt-plus" type="button" class="btn btn-warning btn-block button-text"> Receber
                             <i class="fa fa-plus"></i>
                           </button>
-                          </div>
-                          </div>  <div class="row">
-                            
-                          <div class="col">
-                            <button
-                              id="bt-ac"
-                              type="button"
-                              class="btn btn-secondary btn-block button-text"
-                            >
-                              Cancelar
-                            </button>
-                          </div>
-                            <!--<div class="col">
-                          <button
-                            id="bt-equals"
-                            type="button"
-                            class="btn btn-warning btn-block button-text"
-                          > Receber
-                            <i class="fa fa-equals"></i>
+                        </div>
+                      </div>
+                      <div class="row">
+
+                        <div class="col">
+                          <button id="bt-ac" type="button" class="btn btn-secondary btn-block button-text">
+                            Cancelar
                           </button>
-                          </div>-->
-                          </div>    </div>
-                        </article>
-                    </div>
+                        </div>
+                      </div>
+                    </div>-->
+                  </div>
                 </div>
-            </div>
-        </div>                
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
-<script src=""></script>
-<script src="test.js"></script>
+<script src="recarga.js"></script>
+<!--<script>
+  onload = () => {
+    document.querySelector('#bt-1').onclick = () => digito(1);
+    document.querySelector('#bt-2').onclick = () => digito(2);
+    document.querySelector('#bt-3').onclick = () => digito(3);
+    document.querySelector('#bt-4').onclick = () => digito(4);
+    document.querySelector('#bt-5').onclick = () => digito(5);
+    document.querySelector('#bt-6').onclick = () => digito(6);
+    document.querySelector('#bt-7').onclick = () => digito(7);
+    document.querySelector('#bt-8').onclick = () => digito(8);
+    document.querySelector('#bt-9').onclick = () => digito(9);
+    document.querySelector('#bt-0').onclick = () => digito(0);
+    document.querySelector('#bt-ac').onclick = limpa;
+    document.querySelector('#bt-plus').onclick = () => operador('+');
+    document.querySelector('#bt-equals').onclick = calcula;
+  };
+
+  // Variáveis para armazenarmos o valor, o operador e o estado da calculadora
+  let sValor = '0'; // valor que será apresentado no display
+  let ehNovoNumero = true; // Indica se o próximo digito será de um novo número
+  let valorAnterior = 0; //  Valor acumulado para uma operação
+  let operacaoPendente = null; // Operação acumulada
+
+  // Atualização do visor
+  const atualizaVisor = () => {
+    let [parteInteira, parteDecimal] = sValor.split(',');
+    /* if (parteInteira.length > 10) {
+       document.querySelector('#display').innerText = 'Erro';
+       return;
+     }*/
+    let v = '';
+    c = 0;
+    for (let i = parteInteira.length - 1; i >= 0; i--) {
+      if (++c > 3) {
+        v = '.' + v;
+        c = 1;
+      }
+      v = parteInteira[i] + v;
+    }
+    v = v + (parteDecimal ? ',' + parteDecimal.substr(0, 10 - v.length) : '');
+    //document.querySelector('#display').innerText = v;
+    document.querySelector('#saldo').innerText = v;
+  };
+
+  // Tratamento do clique no botão de dígito
+  const digito = (n) => {
+    if (ehNovoNumero) {
+      sValor = '' + n;
+      ehNovoNumero = false;
+    } else sValor += n;
+    atualizaVisor();
+  };
+
+  // Tratamento do clique no botão de ponto decimal
+  const virgula = () => {
+    if (ehNovoNumero) {
+      sValor = '0,';
+      ehNovoNumero = false;
+    } else if (sValor.indexOf(',') == -1) sValor += ',';
+    atualizaVisor();
+  };
+
+  // Tratamento do clique no botão AC (All Clear)
+  const limpa = () => {
+    ehNovoNumero = true;
+    valorAnterior = 0;
+    sValor = '0';
+    operacaoPendente = null;
+    alert('Operação cancelada.')
+    atualizaVisor();
+  };
+
+  // Converte a string do valor para um número real
+  const valorAtual = () => parseFloat(sValor.replace(',', '.'));
+
+  // Tratamento do clique nos botões de operadores
+  const operador = (op) => {
+    calcula();
+    valorAnterior = valorAtual();
+    operacaoPendente = op;
+    ehNovoNumero = true;
+  };
+
+  const calcula = () => {
+    if (operacaoPendente != null) {
+      let resultado;
+      switch (operacaoPendente) {
+        case '+':
+          resultado = valorAnterior + valorAtual();
+          break;
+
+      }
+      sValor = resultado.toString().replace('.', ',');
+    }
+    ehNovoNumero = true;
+    operacaoPendente = null;
+    valorAnterior = 0;
+    alert('Operação pendente.')
+    atualizaVisor();
+  }; 
+</script>-->
 <script>
-onload = () => {
-  document.querySelector('#bt-1').onclick = () => digito(1);
-  document.querySelector('#bt-2').onclick = () => digito(2);
-  document.querySelector('#bt-3').onclick = () => digito(3);
-  document.querySelector('#bt-4').onclick = () => digito(4);
-  document.querySelector('#bt-5').onclick = () => digito(5);
-  document.querySelector('#bt-6').onclick = () => digito(6);
-  document.querySelector('#bt-7').onclick = () => digito(7);
-  document.querySelector('#bt-8').onclick = () => digito(8);
-  document.querySelector('#bt-9').onclick = () => digito(9);
-  document.querySelector('#bt-0').onclick = () => digito(0);
-  document.querySelector('#bt-ac').onclick = limpa;
-  document.querySelector('#bt-plus').onclick = () => operador('+');
-  document.querySelector('#bt-equals').onclick = calcula;
-};
+  //const LOGIN_URL = "TMRegistro.html";
 
-// Variáveis para armazenarmos o valor, o operador e o estado da calculadora
-let sValor = '0'; // valor que será apresentado no display
-let ehNovoNumero = true; // Indica se o próximo digito será de um novo número
-let valorAnterior = 0; //  Valor acumulado para uma operação
-let operacaoPendente = null; // Operação acumulada
+  var db_saldo = {};
 
-// Atualização do visor
-const atualizaVisor = () => {
-  let [parteInteira, parteDecimal] = sValor.split(',');
- /* if (parteInteira.length > 10) {
-    document.querySelector('#display').innerText = 'Erro';
-    return;
+  var saldoCorrente = {};
+
+  const saldoInicial = {
+    saldoB: [
+      /*{
+          "id": generateUUID (),
+          "nomeC": "Admin do TM",
+          "emailC": "admintm@abc.com",
+          "senhaC1": "159fk"
+      },
+      {
+          "id": generateUUID (),
+          "nomeC": "Admin2 do TM",
+          "emailC": "admin2tm@abc.com",
+          "senhaC1": "753fk"
+      }*/
+    ]
+  };
+
+  function initLoginApp() {
+    saldoCorrenteJSON = sessionStorage.getItem('saldoCorrente');
+    if (saldoCorrenteJSON) {
+      saldoCorrente = JSON.parse(saldoCorrenteJSON);
+    }
+
+    var saldoJSON = localStorage.getItem('db_saldo');
+
+    if (!saldoJSON) {
+      //alert('Dados de usuário não encontrador. \n Cadastre-se.');
+
+      db_saldo = saldoInicial;
+
+      localStorage.setItem('db_saldo', JSON.stringify(saldoInicial));
+    }
+    else {
+      db_saldo = JSON.parse(saldoJSON);
+    }
+  };
+
+  /*function loginUser(emailL, senhaL) {
+    for (var i = 0; i < db_saldo.usuarios.length; i++) {
+      var usuario = db_saldo.usuarios[i];
+
+      if (emailL == usuario.emailC && senhaL == usuario.senhaC1) {
+        saldoCorrente.id = usuario.id;
+        saldoCorrente.nomeC = usuario.nomeC;
+        saldoCorrente.emailC = usuario.emailC;
+
+        sessionStorage.setItem('saldoCorrente', JSON.stringify(saldoCorrente));
+
+        return true;
+      }
+    }
+
+    return false;
   }*/
-  let v = '';
-  c = 0;
-  for (let i = parteInteira.length - 1; i >= 0; i--) {
-    if (++c > 3) {
-      v = '.' + v;
-      c = 1;
-    }
-    v = parteInteira[i] + v;
+
+  function logoutUser() {
+    saldoCorrente = {};
+    sessionStorage.setItem('saldoCorrente', JSON.stringify(saldoCorrente));
+    window.location = LOGIN_URL;
   }
-  v = v + (parteDecimal ? ',' + parteDecimal.substr(0, 10 - v.length) : '');
-  //document.querySelector('#display').innerText = v;
-  document.querySelector('#saldo').innerText = v;
-};
 
-// Tratamento do clique no botão de dígito
-const digito = (n) => {
-  if (ehNovoNumero) {
-    sValor = '' + n;
-    ehNovoNumero = false;
-  } else sValor += n;
-  atualizaVisor();
-};
+  function adcDados(valor) {
+    let saldo = {
+      "saldo": valor
+    };
 
-// Tratamento do clique no botão de ponto decimal
-const virgula = () => {
-  if (ehNovoNumero) {
-    sValor = '0,';
-    ehNovoNumero = false;
-  } else if (sValor.indexOf(',') == -1) sValor += ',';
-  atualizaVisor();
-};
+    db_saldo.saldoB.push(saldo);
 
-// Tratamento do clique no botão AC (All Clear)
-const limpa = () => {
-  ehNovoNumero = true;
-  valorAnterior = 0;
-  sValor = '0';
-  operacaoPendente = null;
-  alert('Operação cancelada.')
-  atualizaVisor();
-};
-
-// Converte a string do valor para um número real
-const valorAtual = () => parseFloat(sValor.replace(',', '.'));
-
-// Tratamento do clique nos botões de operadores
-const operador = (op) => {
-  calcula();
-  valorAnterior = valorAtual();
-  operacaoPendente = op;
-  ehNovoNumero = true;
-};
-
-const calcula = () => {
-  if (operacaoPendente != null) {
-    let resultado;
-    switch (operacaoPendente) {
-      case '+':
-        resultado = valorAnterior + valorAtual();
-        break;
-      
-    }
-    sValor = resultado.toString().replace('.', ',');
+    localStorage.setItem('db_saldo', JSON.stringify(db_saldo));
   }
-  ehNovoNumero = true;
-  operacaoPendente = null;
-  valorAnterior = 0;
-  alert('Operação pendente.')
-  atualizaVisor();
-};
+
+  function setUserPass() {
+
+  }
+
+  initLoginApp();
+
 </script>
+<script>
+  /*function processaFormLogin(event) {
+  
+      event.preventDefault();
+  
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+  
+      resultLogin = loginUser(username, password);
+      if (resultLogin) {
+        window.location.href = 'TechMove.html' , 'TM-Avaliação.html';
+      }
+      else {
+        if (username == 0 || password == 0) {
+          alert('Campos em branco. Favor preenchê-lo')
+        }
+        else {
+          alert('Usuário ou senha incorretos');
+        }
+      }
+    }*/
+  function saveSaldo(event) {
+    event.preventDefault();
+
+    let valor = document.getElementById('sld').value;
+    adcDados(valor);
+    alert('Valor depositado com sucesso.');
+  }
+  //document.getElementById('login-form').addEventListener('submit', processaFormLogin);
+  document.getElementById('depositar').addEventListener('click', saveSaldo);
+</script>
+
 </html>

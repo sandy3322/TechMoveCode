@@ -23,6 +23,20 @@ body .main .container h5 {text-align: center; padding-top: 30px; padding-bottom:
 body .main .container .botao {color: white;border-radius: 5px; margin-top: 35px; margin-bottom: -10px;}
 body .main .container .botao b {color: white;}
 
+/*Botao fav*/
+.btn.btn-outline-success {
+    color: white;
+    border-color: white;
+  }
+.btn.btn-outline-success:hover {
+    color: white;
+    border-color: white;
+    background-color: white;
+  }
+
+#btnFonte {
+    list-style: none;
+}
 /*Css Pesquisa*/
 .main .noticias {margin-top: 50px;}
 .box-noticia {margin: 20px 0px; overflow: auto; color: white; clear: both; margin-left: 34px; background-color: black;}

@@ -114,6 +114,9 @@
                         <div class="conteudo-plano">
                             Plano Atual: <span id="savePlano"></span>
                         </div>
+                        <div class="conteudo-saldo">
+                            Saldo: <span id="saveSaldo"></span>
+                        </div>
                         <div class="conteudo-cartao">
                             Código do Cartão: <span id="saveCartao"></span>
                         </div>
@@ -135,7 +138,6 @@
                 </div>
             </div>
         </div>
-        <script src="TMCartao.js"></script>
         <script>
             function salvarImagens() {
                 let inputImg = document.getElementById('inputImage');
@@ -196,8 +198,8 @@
         </script>
         <script src="tm.js"></script>
 <!--<script src="tmav.js"></script>-->
+        <script src="TMCartao.js" ></script>
         <script>
-            
             function initPage() {
             if (!usuarioCorrente.login) {
                 document.getElementById('saveNome').innerHTML = usuarioCorrente.nomeC != undefined ? usuarioCorrente.nomeC  : " ";
@@ -209,6 +211,15 @@
 
                 let item = JSON.parse(localStorage.getItem('db_cartao')).cartoes[0].numeroCartao;
                 document.getElementById('saveCartao').innerHTML = item != undefined ? item  : " ";
+
+                let v = JSON.parse(localStorage.getItem('db_saldo')).saldoB[0].saldo;
+                document.getElementById('saveSaldo').innerHTML = v != undefined ? "R$" + v + ",00" : " ";
+                /*var avaliacao = JSON.parse(db_av);
+                var text = ` <h5 class='text-titulo'>Número do Veículo</h5> <p class='text-cont'>${avaliacao.NumeroV}</p> 
+                <h5 class='text-titulo'>Data</h5> <p class='text-cont'>${avaliacao.Data}</p>" 
+                <h5 class='text-titulo'>Avaliação</h5> <p class='text-cont'>${avaliacao.Descricao}</p>
+                </div>`;
+                document.getElementById('saveAv').innerHTML = text != undefined ? text  : " ";*/
         }   
 
         }

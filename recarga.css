@@ -12,6 +12,7 @@ body {background-color: #06111F ;}
 .main .caixa-recarga .card1 .test .btn1 { color: white; background-color:red; border: 2px solid black; margin: 10px; padding: 10px; border-radius: 5px;}
 .main .caixa-recarga .card1 .test .btn2 { color: white; background-color:green; border: 2px solid black; margin: 10px; padding: 10px; border-radius: 5px; position: relative; left: 430px;}
 .main .caixa-recarga .card1 .test .btn2:disabled{ color:black; background-color:grey; border: 2px solid black; margin: 10px; padding: 10px; border-radius: 5px; position: relative; left: 430px;}
+.main .caixa-recarga .card1 .test .btn3 {color: black; background-color: #ffaa00; border: 2px solid black; margin: 10px; padding: 10px; border-radius: 10px;}
 
 .divider-text {position: relative; text-align: center; margin-top: 15px; margin-bottom: 15px;}
 .divider-text span { padding: 7px; font-size: 12px; position: relative; z-index: 2;}
@@ -31,7 +32,7 @@ div.box {
 .main .container.caixa-recarga .card.card1 .control-group .controls .span2 {width: 100px;}
 .main .container.caixa-recarga .card.card1 .control-group .controls .span3 {width: 288px;}
 .main .container.caixa-recarga .card.card1 .control-group .controls .span4 {width: 405px;}
-.main .
+
 
 body .footer{display: flex; background-color: black;}
 body .footer .row .col-2 {margin-left: 10px; margin-top: 20px; width: 100px;} 
@@ -107,8 +108,9 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
   #calculadora .card-body {
     background-color: #27364d;
   }
-  #calculadora .caixa-saldo{background-color: #27364d;}  
-  #calculadora .textoSaldo {color: white; font-size: 30px; font-weight: bold; position: relative; left: 97px; top: 20px;}
+  #calculadora .caixa-saldo{background-color: #27364d; width: 400px; height: 200px;}
+  #calculadora .caixa-saldo #depositar { background-color: #ffaa00; border: 1px solid black; color: black; border-radius: 5px; font-size: medium; width: 300px; margin-left: 0px ; margin-top: 15px;}  
+  #calculadora .textoSaldo {color: white; font-size: 30px; font-weight: bold; position: relative; left: 40px; top: 20px;}
   
   #calculadora button {
     margin: 5px;

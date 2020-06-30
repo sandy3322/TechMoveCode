@@ -95,6 +95,7 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
 .main .container .row .col-8 .conteudo-nome{border: 1px solid gray; background-color: white; margin-top: 20px;}
 .main .container .row .col-8 .conteudo-email{border: 1px solid gray; background-color: white; margin-top: 20px;}
 .main .container .row .col-8 .conteudo-plano{border: 1px solid gray; background-color: white; margin-top: 20px;}
+.main .container .row .col-8 .conteudo-saldo{border: 1px solid gray; background-color: white; margin-top: 20px;}
 .main .container .row .col-8 .conteudo-cartao{border: 1px solid gray; background-color: white; margin-top: 100px;}
 .main .container .row .col-8 .conteudo .col-6 #cadastrar_cartao{margin-top: 20px; background-color: green; border-radius: 8px; color: white; border: 2px solid white;}
 .main .container .row .col-8 .conteudo .col-6 #perda_cartao{margin-top: 20px; background-color: green; border-radius: 8px; color: white; border: 2px solid white;}

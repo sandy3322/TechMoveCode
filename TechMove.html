@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png"/>
+    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png" />
     <title> TECHMOVE - Home </title>
     <link rel="stylesheet" href="style.css">
 
@@ -57,13 +57,23 @@
             style="background-color: black !important; height: 70px;">
             <a href="TechMove.html"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
             <form class="form-inline busca">
-                <input id="txtPesquisa" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Buscar"
-                    style="background-color: black; width: 600px; border: 0px;">
-                <button id="btnPesquisa" class="btn  my-2 my-sm-0" type="submit" style="border: none; background-color: black;"><img
-                        src="icons/lupab.png" alt="" height="25px" weigth="250px"></button>
+                <input id="txtPesquisa" class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
+                    aria-label="Buscar" style="background-color: black; width: 600px; border: 0px;">
+                <button id="btnPesquisa" class="btn  my-2 my-sm-0" type="submit"
+                    style="border: none; background-color: black;"><img src="icons/lupab.png" alt="" height="25px"
+                        weigth="250px"></button>
+                <button id="btnFav" class="btn btn-outline-success " type="submit"
+                    style="border: none; background-color: black;"><svg  width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                      </svg></button>
+                <div id="btnFonte">
+                    <ul>
+
+                    </ul>
+                </div>
             </form>
             <div class="dropdown">
-                
+
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     style="background-color: black; border: none">
@@ -71,24 +81,29 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
-                    <a class="dropdown-item" href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/facebook.png" height="30px" weigth="35px"></a>
-                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/instagra.png" height="30px" weigth="35px"></a>
-                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/twitter.png" height="30px" weigth="35px"></a>
-                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/linkedin.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item"
+                        href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/facebook.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/instagra.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/twitter.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/linkedin.png" height="30px"
+                            weigth="35px"></a>
                     <a class="dropdown-item" href="#" style="background-color: black; padding-left: 27px;"><img
                             src="icons/google +.png" height="30px" weigth="35px"></a>
                 </div>
             </div>
         </nav>
         <div class="teste">
-            <h1 style="color: white;"> <span id="nomeUsuario" value="usuario" ></span></h1>
+            <h1 style="color: white;"> <span id="nomeUsuario" value="usuario"></span></h1>
             <!--<button id="btn_logout"></button>-->
         </div>
-        
+
         <div class="container col-lg-9 col-md-12 col-sm-12 col-xs-12 conteudo">
             <div class="row carrossel_" id="carrossel">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 30px; margin-left: 35px;">
@@ -141,10 +156,13 @@
                 </div>
             </div>
             <div id="titulo" class="titulo">
-                
-            </div> 
+
+            </div>
             <div id="noticia" class="noticias">
-                
+
+            </div>
+            <div id="gradeNews">
+
             </div>
             <div class="container planos" style="margin-top: 60px;">
                 <div class="row">
@@ -198,7 +216,8 @@
                                     <h5 style="color: black; background-color:  #daa520;">ESTADUAL</h5>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text">Adquira já o plano Estadual, você tem acesso a tudo, e os créditos. Com o Plano Estadual
+                                    <p class="card-text">Adquira já o plano Estadual, você tem acesso a tudo, e os
+                                        créditos. Com o Plano Estadual
                                         TechMove você consegue fazer viagens interestaduais e além de possuir R$600,00
                                         em créditos, isso mesmo, R$600 reais pelo
                                         valor de R$500 em dinheiro.</p>
@@ -245,8 +264,8 @@
     </footer>
     <script src="tm.js"></script>
     <script>
-        
-       
+
+
         //texto.innerHTML = nome != undefined ? "Olá ${nome}, seja bem vindo" : "Olá, seja bem vindo"
         /*function exibeUsuarios() {
             let listaUsuarios = '';
@@ -258,26 +277,26 @@
         }*/
         function initPage() {
             if (!usuarioCorrente.login) {
-                document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nomeC != undefined ? "Olá " + usuarioCorrente.nomeC + ", seja bem-vindo!"  : " ";
-                document.getElementById('btn_saida').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " " ;
-                document.getElementById('btn_logout').addEventListener('click', logoutUser);  
-        }   
+                document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nomeC != undefined ? "Olá " + usuarioCorrente.nomeC + ", seja bem-vindo!" : " ";
+                document.getElementById('btn_saida').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " ";
+                document.getElementById('btn_logout').addEventListener('click', logoutUser);
+            }
 
-       // exibeUsuarios ();
+            // exibeUsuarios ();
         }
         window.addEventListener('load', initPage);
 
     </script>
     <script src="pesquisa.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
