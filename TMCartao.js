@@ -94,4 +94,4 @@ function setUserPass () {
 initCartaoApp ();
 
 
-//document.getElementById ('numeroCard').value = generateUUID();
+/*document.getElementById ('numeroCard').value = generateUUID();*/

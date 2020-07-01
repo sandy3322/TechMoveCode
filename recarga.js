@@ -202,7 +202,7 @@ function boletoPag () {
   //document.getElementById('btn2').addEventListener('click', init);
   //elemMain.innerHTML = textoHTML;
 }
-
+/**/
 
 
   

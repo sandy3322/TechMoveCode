@@ -247,3 +247,4 @@ function addEvents() {
     document.getElementById('btnPesquisa').addEventListener('click', executarPesquisa);
     document.getElementById('btnFav').addEventListener('click', adicionaTag);
 }
+/**/
