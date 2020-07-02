@@ -245,3 +245,4 @@ function addEvents() {
     document.getElementById('btnFav').addEventListener('click', adicionaTag);
 }
 /**/
+/**/
