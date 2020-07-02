@@ -55,9 +55,6 @@ var tema = document.getElementById('noticia');
 
 onload = () => {
 
-    if (window.location.hostname != "localhost") {
-        window.location.href = `${window.location.protocol}//localhost:${window.location.port}/TechMove.html`;
-    }
 
     exibeTags();
     addEvents();
