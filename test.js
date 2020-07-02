@@ -1,3 +1,29 @@
+var db_planos = {};
+
+var planosCorrente = {};
+
+const planosIniciais = {
+  planos: [
+    /*{
+        "planoSalvo": plano,
+    },
+    {
+        "planoSalvo": plano,
+    }*/
+  ]
+};
+
+function adcPlanos(plano) {
+  let planoS = {
+    "planoSalvo": plano,
+  };
+
+  db_planos.planos.push(planoS);
+
+  localStorage.setItem('db_planos', JSON.stringify(db_planos));
+}
+
+
 var select = document.querySelector('select');
 var para = document.querySelector('p');
 
@@ -7,25 +33,25 @@ document.getElementById("btnConfirmar").disabled = true;
 document.getElementById("btnCancelar").disabled = true;
 function setWeather() {
   var choice = select.value;
-  if(choice != 'vazio'){
+  if (choice != 'vazio') {
     document.getElementById("btnConfirmar").disabled = false;
     document.getElementById("btnCancelar").disabled = false;
-     if (choice === '1') {
-    para.textContent = 'Assine agora o plano Urbano "TechMove", com ele você ganha R$200,00 em créditos no seu cartão para andar com o transporte público que quiser, seja patinete, bicicleta, ônibus ou metrô... Quer saber mais? Tudo isso por apenas R$180,00 mensais...';
-  } else if (choice === '2') {
-    para.textContent = 'Assine hoje, o plano InterUrbano "TechMove", mais completo, para você que usa o transporte todo dia! Com esse plano você recebe R$400 reais em créditos mensais acumuláveis, e possui aumento na quantidade de avaliações e tudo isso por R$340,00 mensais.';
-  } else if (choice === '3') {
-    para.textContent = 'Adquira já o plano Estadual, você tem acesso a tudo, e os créditos. Com o Plano Estadual TechMove você consegue fazer viagens interestaduais e além de possuir R$600,00 em créditos, isso mesmo, R$600 reais pelo valor de R$500 em dinheiro por mês.';
-  } else {
-    para.textContent = '';
+    if (choice === 'Urbano') {
+      para.textContent = 'Assine agora o plano Urbano "TechMove", com ele você ganha R$200,00 em créditos no seu cartão para andar com o transporte público que quiser, seja patinete, bicicleta, ônibus ou metrô... Quer saber mais? Tudo isso por apenas R$180,00 mensais...';
+    } else if (choice === 'Interurbano') {
+      para.textContent = 'Assine hoje, o plano InterUrbano "TechMove", mais completo, para você que usa o transporte todo dia! Com esse plano você recebe R$400 reais em créditos mensais acumuláveis, e possui aumento na quantidade de avaliações e tudo isso por R$340,00 mensais.';
+    } else if (choice === 'Estadual') {
+      para.textContent = 'Adquira já o plano Estadual, você tem acesso a tudo, e os créditos. Com o Plano Estadual TechMove você consegue fazer viagens interestaduais e além de possuir R$600,00 em créditos, isso mesmo, R$600 reais pelo valor de R$500 em dinheiro por mês.';
+    } else {
+      para.textContent = '';
+    }
   }
 }
-}
 
-function escolha () {
+function escolha() {
   var escolhaHTML = '';
 
-    escolhaHTML = escolhaHTML + `
+  escolhaHTML = escolhaHTML + `
     <h1 class="titulo-metodo" style="margin: 20px 130px">Métodos de pagamento</h1>
     <div class="row" style="margin: 0px 100px">
       <div>
@@ -42,23 +68,27 @@ function escolha () {
       </div>
     </div>
     `
-  
+
   document.getElementById('conteudo').innerHTML = escolhaHTML;
 }
+function myFunction() {
+  var x = document.getElementById("weather").value;
+  document.getElementById("demo").innerHTML = "Plano selecionado: " + x;
+}
 
-function paypal(){
+function paypal() {
   window.location.href = 'https://www.paypal.com/br/home';
 }
 
-function cancela(){
+function cancela() {
   alert('Operação cancelada.')
   window.location.href = 'TM-Planos.html'
 }
 
-function cartaoPag () {
+function cartaoPag() {
   var cartaoPagHTML = '';
 
-    cartaoPagHTML = cartaoPagHTML + `
+  cartaoPagHTML = cartaoPagHTML + `
     <article class="card-body" style="margin: 0px 120px">
     <div class="texto">
         <h4 class="card-title text-left" style="font-size: 30px">
@@ -126,6 +156,7 @@ function cartaoPag () {
             </div>
           </div>
           <div class="control-group">
+            <h1 style="font-size: large;" id="demo"></h1>
             <h1 style="font-size: large;">Selecione a bandeira do seu cartão.<h1>
             <div class="controls">           
               <div class="box">
@@ -141,16 +172,16 @@ function cartaoPag () {
     </div>
 </article>
     `
-  
+
   document.getElementById('conteudo').innerHTML = cartaoPagHTML;
   //document.getElementById('btn2').addEventListener('click', init);
   //elemMain.innerHTML = textoHTML;
 }
 
-function boletoPag () {
+function boletoPag() {
   var boletoPagHTML = '';
 
-    boletoPagHTML = boletoPagHTML + `
+  boletoPagHTML = boletoPagHTML + `
     <article class="card-body">
     <div class="texto">
         <h4 class="card-title text-left" style="font-size: 30px">
@@ -187,7 +218,7 @@ function boletoPag () {
     </div>
 </article>
     `
-  
+
   document.getElementById('conteudo').innerHTML = boletoPagHTML;
   //document.getElementById('btn2').addEventListener('click', init);
   //elemMain.innerHTML = textoHTML;

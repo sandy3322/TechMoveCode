@@ -88,7 +88,7 @@
             </div>
         </nav>
         <div class="teste">
-            <h1 style="color: white;"> <span id="nomeUsuario" value="usuario" ></span></h1>
+            <h1 style="color: white;"> <span id="nomeUsuario" value="usuario"></span></h1>
             <!--<button id="btn_logout"></button>-->
         </div>
         <div class="container">
@@ -184,7 +184,7 @@
                 for (i = 0; i < 1; i++) {
                     textoHTML += `<div class="box-imagem"><img src="${imagens[i].imagem}"></div>`;
                 }
-                
+
 
                 // Mostrar o código na div tela
                 tela.innerHTML = textoHTML
@@ -198,34 +198,44 @@
             botaoExibir.addEventListener('click', exibirImagens);
         </script>
         <script src="tm.js"></script>
-<!--<script src="tmav.js"></script>-->
-        <script src="TMCartao.js" ></script>
+        <!--<script src="tmav.js"></script>-->
+        <script src="TMCartao.js"></script>
         <script>
             function initPage() {
-            if (!usuarioCorrente.login) {
-                document.getElementById('saveNome').innerHTML = usuarioCorrente.nomeC != undefined ? usuarioCorrente.nomeC  : " ";
-                document.getElementById('saveEmail').innerHTML = usuarioCorrente.emailC != undefined ? usuarioCorrente.emailC  : " ";
-                
-                /*document.getElementById('saveAv').innerHTML = avaliacao.numeroV != undefined ? avaliacao.numeroV  : " ";*/
-                document.getElementById('btn_saida').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " " ;
-                document.getElementById('btn_logout').addEventListener('click', logoutUser);  
+                if (!usuarioCorrente.login) {
+                    document.getElementById('saveNome').innerHTML = usuarioCorrente.nomeC != undefined ? usuarioCorrente.nomeC : " ";
+                    document.getElementById('saveEmail').innerHTML = usuarioCorrente.emailC != undefined ? usuarioCorrente.emailC : " ";
 
-                let item = JSON.parse(localStorage.getItem('db_cartao')).cartoes[0].numeroCartao;
-                document.getElementById('saveCartao').innerHTML = item != undefined ? item  : " ";
+                    /*document.getElementById('saveAv').innerHTML = avaliacao.numeroV != undefined ? avaliacao.numeroV  : " ";*/
+                    document.getElementById('btn_saida').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " ";
+                    document.getElementById('btn_logout').addEventListener('click', logoutUser);
 
-                let v = JSON.parse(localStorage.getItem('db_saldo')).saldoB[0].saldo;
-                document.getElementById('saveSaldo').innerHTML = v != undefined ? "R$" + v + ",00" : " ";
-                /*var avaliacao = JSON.parse(db_av);
-                var text = ` <h5 class='text-titulo'>Número do Veículo</h5> <p class='text-cont'>${avaliacao.NumeroV}</p> 
-                <h5 class='text-titulo'>Data</h5> <p class='text-cont'>${avaliacao.Data}</p>" 
-                <h5 class='text-titulo'>Avaliação</h5> <p class='text-cont'>${avaliacao.Descricao}</p>
-                </div>`;
-                document.getElementById('saveAv').innerHTML = text != undefined ? text  : " ";*/
-                /**/
-        }   
+                    let item = JSON.parse(localStorage.getItem('db_cartao')).cartoes[0].numeroCartao;
+                    document.getElementById('saveCartao').innerHTML = item != undefined ? item : " ";
 
-        }
-        window.addEventListener('load', initPage);
+
+                    var salvarSaldo = JSON.parse(localStorage.getItem('db_cartao'))
+                    for (var i = 0; i < salvarSaldo.length; i++){
+                        var total = 0;
+                        total += salvarSaldo[i];
+                    }
+                    let v = total;
+                    //JSON.parse(localStorage.getItem('db_saldo')).saldoB[0].saldo;
+
+                    document.getElementById('saveSaldo').innerHTML = v != undefined ? "R$" + v + ",00" : " ";
+                    /*var avaliacao = JSON.parse(db_av);
+                    var text = ` <h5 class='text-titulo'>Número do Veículo</h5> <p class='text-cont'>${avaliacao.NumeroV}</p> 
+                    <h5 class='text-titulo'>Data</h5> <p class='text-cont'>${avaliacao.Data}</p>" 
+                    <h5 class='text-titulo'>Avaliação</h5> <p class='text-cont'>${avaliacao.Descricao}</p>
+                    </div>`;
+                    document.getElementById('saveAv').innerHTML = text != undefined ? text  : " ";*/
+                    /**/
+                }
+
+            }
+            window.addEventListener('load', initPage);
+        </script>
+        <script>
         </script>
 </body>
 

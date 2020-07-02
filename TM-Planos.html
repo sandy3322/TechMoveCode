@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png"/>
+    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png" />
     <title> TECHMOVE - Planos </title>
     <link rel="stylesheet" href="recarga.css">
 
@@ -88,21 +88,22 @@
             <div class="row-fluid">
                 <div class="col-lg-10 col-md-12 col-sm-10 col-xs-10">
                     <div class="card card1" style="margin-left: 150px;">
-                        <article class="card-body">                        
+                        <article class="card-body">
                             <div class="test">
                                 <h1>Planos Mensais</h1>
                                 <label for="weather">Selecione um plano: </label>
-                                <select id="weather">
-                                <option value="vazio">--Escolha um plano--</option>
-                                <option value="1">Urbano</option>
-                                <option value="2">Interurbano</option>
-                                <option value="3">Estadual</option>
+                                <select id="weather" onchange="myFunction()">
+                                    <option id="p1" value="vazio">--Escolha um plano--</option>
+                                    <option value="Urbano">Urbano</option>
+                                    <option value="Interurbano">Interurbano</option>
+                                    <option value="Estadual">Estadual</option>
                                 </select>
 
                                 <p></p>
                                 <div class="row">
                                     <button id="btnCancelar" class="btn1" onclick="cancela()">Cancelar</button>
-                                    <button id="btnConfirmar" class="btn2" onclick="escolha()">Confirmar plano</button>
+                                    <button id="btnConfirmar" class="btn2" onclick="escolha()">Confirmar
+                                        plano</button>
                                 </div>
                             </div>
                             <div id="conteudo">
@@ -112,11 +113,10 @@
                     </div>
                 </div>
             </div>
-        </div>                
+        </div>
 </body>
-<script src="">
-    /**/
-    //document.getElementById('btn2').addEventListener('click', init);
-</script>
 <script src="test.js"></script>
+<script>
+</script>
+
 </html>
