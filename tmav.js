@@ -59,6 +59,13 @@ $(function() {
                 "<h5 class='text-titulo'>Data</h5> <p class='text-cont'> " + avaliacao.Data + "</p>" +
                 "<h5 class='text-titulo'>Avaliação</h5> <p class='text-cont'> " + avaliacao.Descricao + "</p>" +
                 "</div>");
+            
+            var av_n = avaliacao.NumeroV
+            var av_d = avaliacao.Data
+            var av_des = avaliacao.Descricao
+            localStorage.setItem('av_n', av_n)
+            localStorage.setItem('av_d', av_d)
+            localStorage.setItem('av_des', av_des)
         }
     }
 

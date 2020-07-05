@@ -4,7 +4,7 @@ var db_usuarios = {};
 
 var usuarioCorrente = {};
 
-function generateUUID () {
+/*function generateUUID () {
     var d = new Date().getTime();
     var d2 = (performance && performance.now && (performance.now()*1000)) || 0;
 
@@ -19,7 +19,7 @@ function generateUUID () {
         }
         return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(6);
     });
-}
+}*/
 
 const dadosIniciais = {
     usuarios: [
@@ -63,7 +63,7 @@ function loginUser (emailL, senhaL) {
         var usuario = db_usuarios.usuarios[i];
 
         if (emailL == usuario.emailC && senhaL == usuario.senhaC1) {
-            usuarioCorrente.id = usuario.id;
+            //usuarioCorrente.id = usuario.id;
             usuarioCorrente.nomeC = usuario.nomeC;
             usuarioCorrente.emailC = usuario.emailC;
 
@@ -83,9 +83,9 @@ function logoutUser () {
 }
 
 function adcDados (nomeC, emailC, senhaC1) {
-    let newID = generateUUID ();
+    //let newID = generateUUID ();
     let usuario = {
-        "id": newID,
+        //"id": newID,
         "nomeC": nomeC,
         "emailC": emailC,
         "senhaC1": senhaC1

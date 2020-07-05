@@ -22,7 +22,7 @@
         </a>
       </li>
       <li class="nav-item ativa" style="margin-top: 20%;">
-        <a class="nav-link active" href="#">
+        <a class="nav-link active" href="TM-Planos.html">
           <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
         </a>
       </li>
@@ -41,12 +41,15 @@
           <center><img src="icons/recargapng.png" height="30px" weigth="35px"></center>
         </a>
       </li>
-      <li class="nav-item ativa" style="margin-top: 20%;">
+      <!--<li class="nav-item ativa" style="margin-top: 20%;">
         <a class="nav-link" href="perfil.html">
           <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
         </a>
-      </li>
+      </li>-->
     </ul>
+    <div id="saida">
+      <span id="btn_saida"></span>
+    </div>
   </header>
   <main class="main">
     <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
@@ -85,22 +88,22 @@
     </nav>
     <div class="container caixa-recarga">
       <div class="row-fluid">
-        <div class="col-lg-10 col-md-12 col-sm-10 col-xs-10">
-          <div class="card card1" style="margin-left: 150px;">
+        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+          <div class="card card1">
             <article class="card-body">
               <div class="test">
                 <h1>Valores de Recarga</h1>
                 <label for="weather">Selecione um valor: </label>
-                <select id="weather">
-                  <option value="vazio">--Escolha um valor--</option>
-                  <option value="1">R$5,00</option>
-                  <option value="2">R$10,00</option>
-                  <option value="3">R$15,00</option>
-                  <option value="4">R$20,00</option>
-                  <option value="5">R$25,00</option>
-                  <option value="6">R$50,00</option>
-                  <option value="7">R$100,00</option>
-                  <option value="8">R$200,00</option>
+                <select id="choiceRecar">
+                  <option value="0">--Escolha um valor--</option>
+                  <option value="5">R$5,00</option>
+                  <option value="10">R$10,00</option>
+                  <option value="15">R$15,00</option>
+                  <option value="20">R$20,00</option>
+                  <option value="25">R$25,00</option>
+                  <option value="50">R$50,00</option>
+                  <option value="100">R$100,00</option>
+                  <option value="200">R$200,00</option>
                 </select>
 
                 <p></p>
@@ -116,68 +119,13 @@
                 </p>
               </div>
               <div id="recarrega">
-                <div class="container" style="margin-top: 30px; margin: 0px 140px">
-                  <h1 style="margin-left: 135px">Recarga</h1>
-                  <div id="calculadora" class="card">
-                    <div class="caixa-saldo">
-                      <p class="textoSaldo">Valor digitado: R$<input name="sld" id="sld" class="form-control"
-                          placeholder="Valor" type="value" style="width: 300px;">
-                        <!--<span id="saldo">0</span></p>-->
-                        <button id="depositar">Depositar</button>
-                    </div>
-                    <!--<div class="card-body">
-                      <div class="row">
-                        <div class="col">
-                          <button id="bt-1" type="button" class="btn btn-light btn-block button-text">1</button>
-                        </div>
-                        <div class="col">
-                          <button id="bt-2" type="button" class="btn btn-light btn-block button-text">2</button>
-                        </div>
-                        <div class="col">
-                          <button id="bt-3" type="button" class="btn btn-light btn-block button-text">3</button>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button id="bt-4" type="button" class="btn btn-light btn-block button-text">4</button>
-                        </div>
-                        <div class="col">
-                          <button id="bt-5" type="button" class="btn btn-light btn-block button-text">5</button>
-                        </div>
-                        <div class="col">
-                          <button id="bt-6" type="button" class="btn btn-light btn-block button-text">6</button>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button id="bt-7" type="button" class="btn btn-light btn-block button-text">7</button>
-                        </div>
-                        <div class="col">
-                          <button id="bt-8" type="button" class="btn btn-light btn-block button-text">8</button>
-                        </div>
-                        <div class="col">
-                          <button id="bt-9" type="button" class="btn btn-light btn-block button-text">9</button>
-                        </div>
-                      </div>
-                      <div class="">
-                        <button id="bt-0" type="button" class="btn btn-light btn-block button-text">0</button>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button id="bt-plus" type="button" class="btn btn-warning btn-block button-text"> Receber
-                            <i class="fa fa-plus"></i>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="row">
-
-                        <div class="col">
-                          <button id="bt-ac" type="button" class="btn btn-secondary btn-block button-text">
-                            Cancelar
-                          </button>
-                        </div>
-                      </div>
-                    </div>-->
+                <div class="container recargaValor">
+                  <h1 class="titulo">Recarga</h1>
+                  <div class="caixa-saldo">
+                    <p class="textoSaldo">Valor digitado: R$<input name="sld" id="sld" class="form-control"
+                        placeholder="Valor" type="value" >
+                      <!--<span id="saldo">0</span></p>-->
+                      <button id="depositar" class="btn btn-block">Depositar</button>
                   </div>
                 </div>
               </div>
@@ -186,109 +134,38 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="row">
+        <div class="col-2 menu">
+          <a class="icon" href="TechMove.html">
+            <img class="logo" src="icons/logotipo.png" height="50px" weigth="50px">
+          </a>
+        </div>
+        <div class="col-2 menu">
+          <a class="icon" href="#">
+            <img src="icons/cartao.png" height="35px" weigth="35px">
+          </a>
+        </div>
+        <div class="col-2 menu">
+          <a class="icon" href="#">
+            <img src="icons/contrato.png" height="25px" weigth="35px">
+          </a>
+        </div>
+        <div class="col-2 menu">
+          <a class="icon" href="TMRegistro.html">
+            <img src="icons/perfil.png" height="30px" weigth="35px">
+          </a>
+        </div>
+        <div class="col-2">
+          <a class="icon" href="recarga.html">
+            <img src="icons/recargapng.png" height="25px" weigth="35px">
+          </a>
+        </div>
+      </div>
+    </footer>
 </body>
 <script src="recarga.js"></script>
-<!--<script>
-  onload = () => {
-    document.querySelector('#bt-1').onclick = () => digito(1);
-    document.querySelector('#bt-2').onclick = () => digito(2);
-    document.querySelector('#bt-3').onclick = () => digito(3);
-    document.querySelector('#bt-4').onclick = () => digito(4);
-    document.querySelector('#bt-5').onclick = () => digito(5);
-    document.querySelector('#bt-6').onclick = () => digito(6);
-    document.querySelector('#bt-7').onclick = () => digito(7);
-    document.querySelector('#bt-8').onclick = () => digito(8);
-    document.querySelector('#bt-9').onclick = () => digito(9);
-    document.querySelector('#bt-0').onclick = () => digito(0);
-    document.querySelector('#bt-ac').onclick = limpa;
-    document.querySelector('#bt-plus').onclick = () => operador('+');
-    document.querySelector('#bt-equals').onclick = calcula;
-  };
 
-  // Variáveis para armazenarmos o valor, o operador e o estado da calculadora
-  let sValor = '0'; // valor que será apresentado no display
-  let ehNovoNumero = true; // Indica se o próximo digito será de um novo número
-  let valorAnterior = 0; //  Valor acumulado para uma operação
-  let operacaoPendente = null; // Operação acumulada
-
-  // Atualização do visor
-  const atualizaVisor = () => {
-    let [parteInteira, parteDecimal] = sValor.split(',');
-    /* if (parteInteira.length > 10) {
-       document.querySelector('#display').innerText = 'Erro';
-       return;
-     }*/
-    let v = '';
-    c = 0;
-    for (let i = parteInteira.length - 1; i >= 0; i--) {
-      if (++c > 3) {
-        v = '.' + v;
-        c = 1;
-      }
-      v = parteInteira[i] + v;
-    }
-    v = v + (parteDecimal ? ',' + parteDecimal.substr(0, 10 - v.length) : '');
-    //document.querySelector('#display').innerText = v;
-    document.querySelector('#saldo').innerText = v;
-  };
-
-  // Tratamento do clique no botão de dígito
-  const digito = (n) => {
-    if (ehNovoNumero) {
-      sValor = '' + n;
-      ehNovoNumero = false;
-    } else sValor += n;
-    atualizaVisor();
-  };
-
-  // Tratamento do clique no botão de ponto decimal
-  const virgula = () => {
-    if (ehNovoNumero) {
-      sValor = '0,';
-      ehNovoNumero = false;
-    } else if (sValor.indexOf(',') == -1) sValor += ',';
-    atualizaVisor();
-  };
-
-  // Tratamento do clique no botão AC (All Clear)
-  const limpa = () => {
-    ehNovoNumero = true;
-    valorAnterior = 0;
-    sValor = '0';
-    operacaoPendente = null;
-    alert('Operação cancelada.')
-    atualizaVisor();
-  };
-
-  // Converte a string do valor para um número real
-  const valorAtual = () => parseFloat(sValor.replace(',', '.'));
-
-  // Tratamento do clique nos botões de operadores
-  const operador = (op) => {
-    calcula();
-    valorAnterior = valorAtual();
-    operacaoPendente = op;
-    ehNovoNumero = true;
-  };
-
-  const calcula = () => {
-    if (operacaoPendente != null) {
-      let resultado;
-      switch (operacaoPendente) {
-        case '+':
-          resultado = valorAnterior + valorAtual();
-          break;
-
-      }
-      sValor = resultado.toString().replace('.', ',');
-    }
-    ehNovoNumero = true;
-    operacaoPendente = null;
-    valorAnterior = 0;
-    alert('Operação pendente.')
-    atualizaVisor();
-  }; 
-</script>-->
 <script>
   //const LOGIN_URL = "TMRegistro.html";
 
@@ -375,38 +252,21 @@
 
 </script>
 <script>
-  /*function processaFormLogin(event) {
-  
-      event.preventDefault();
-  
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
-  
-      resultLogin = loginUser(username, password);
-      if (resultLogin) {
-        window.location.href = 'TechMove.html' , 'TM-Avaliação.html';
-      }
-      else {
-        if (username == 0 || password == 0) {
-          alert('Campos em branco. Favor preenchê-lo')
-        }
-        else {
-          alert('Usuário ou senha incorretos');
-        }
-      }
-    }*/
+
   function saveSaldo(event) {
     event.preventDefault();
 
     let valor = document.getElementById('sld').value;
     adcDados(valor);
-    //alert('Valor depositado com sucesso.');
+    alert('Valor depositado com sucesso.');
   }
   //document.getElementById('login-form').addEventListener('submit', processaFormLogin);
   document.getElementById('depositar').addEventListener('click', saveSaldo);
 
+</script>
+<!--<script src="tm.js"></script>-->
+<script>
 
-  /**/
 </script>
 
 </html>

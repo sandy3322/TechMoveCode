@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li class="nav-item ativa" style="margin-top: 20%;">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="TM-Planos.html">
                     <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
                 </a>
             </li>
@@ -161,6 +161,7 @@
 
                         // Salvar o array de imagens no localStorage
                         localStorage.setItem('db_imgs', JSON.stringify(imagens));
+                        
                     };
 
                     readerImg.readAsDataURL(inputImg.files[0]);
@@ -202,6 +203,7 @@
         <script src="TMCartao.js"></script>
         <script>
             function initPage() {
+
                 if (!usuarioCorrente.login) {
                     document.getElementById('saveNome').innerHTML = usuarioCorrente.nomeC != undefined ? usuarioCorrente.nomeC : " ";
                     document.getElementById('saveEmail').innerHTML = usuarioCorrente.emailC != undefined ? usuarioCorrente.emailC : " ";
@@ -214,28 +216,50 @@
                     document.getElementById('saveCartao').innerHTML = item != undefined ? item : " ";
 
 
-                    var salvarSaldo = JSON.parse(localStorage.getItem('db_cartao'))
-                    for (var i = 0; i < salvarSaldo.length; i++){
-                        var total = 0;
-                        total += salvarSaldo[i];
+                    //var salvarSaldo = JSON.parse(localStorage.getItem('db_saldo'))
+                    let vp = localStorage.getItem('value')
+                    //let invertVP = parseFloat(vp);
+
+                    let salvarSaldo = JSON.parse(localStorage.getItem('db_saldo'));
+                    //invertVP = 0;
+                    let invertVP = parseFloat(vp);
+                    let total = 0;
+
+                    for (i = 0; i < salvarSaldo.saldoB.length; i++) {
+                        if (invertVP != 0) {
+                            total += parseFloat(salvarSaldo.saldoB[i].saldo) + invertVP
+                        }
+                        else {
+                            total += parseFloat(salvarSaldo.saldoB[i].saldo);
+                        }
                     }
+
                     let v = total;
                     //JSON.parse(localStorage.getItem('db_saldo')).saldoB[0].saldo;
 
                     document.getElementById('saveSaldo').innerHTML = v != undefined ? "R$" + v + ",00" : " ";
-                    /*var avaliacao = JSON.parse(db_av);
-                    var text = ` <h5 class='text-titulo'>Número do Veículo</h5> <p class='text-cont'>${avaliacao.NumeroV}</p> 
-                    <h5 class='text-titulo'>Data</h5> <p class='text-cont'>${avaliacao.Data}</p>" 
-                    <h5 class='text-titulo'>Avaliação</h5> <p class='text-cont'>${avaliacao.Descricao}</p>
+                    //Avaliações
+                    var av_n = localStorage.getItem('av_n')
+                    var av_d = localStorage.getItem('av_d')
+                    var av_des = localStorage.getItem('av_des')
+                    var text = ` <div class='av'>
+                     <h5 class='text-titulo'>Número do Veículo</h5> <p class='text-cont'>${av_n}</p> 
+                    <h5 class='text-titulo'>Data</h5> <p class='text-cont'>${av_d}</p> 
+                    <h5 class='text-titulo'>Avaliação</h5> <p class='text-cont'>${av_des}</p>
                     </div>`;
-                    document.getElementById('saveAv').innerHTML = text != undefined ? text  : " ";*/
-                    /**/
+                    document.getElementById('saveAv').innerHTML = text != undefined ? text : " "
+                    //Plano
+                    let p = localStorage.getItem('text')
+                    //document.getElementById('savePlano').value = p;
+                    document.getElementById('savePlano').innerHTML = p != undefined ? p : " ";
+
                 }
 
             }
             window.addEventListener('load', initPage);
         </script>
         <script>
+
         </script>
 </body>
 

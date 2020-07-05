@@ -1,3 +1,45 @@
+var salvarRecarga = function () {
+  //var select = document.getElementById('choicePlan');
+  //var option = select.options[select.selectedIndex];
+  var nomeCD = document.getElementById('username').value
+  var numeroCD = document.getElementById('numeroCard').value
+  var senhaCD = document.getElementById('password_confirm').value
+  if (nomeCD == 0 || numeroCD == 0 || senhaCD == 0) {
+    alert('Campo em branco. Favor preenchê-lo')
+  }
+  else {
+    var select = document.getElementById('choiceRecar');
+    var option = select.options[select.selectedIndex];
+    //var text = option.text
+    var valueR = document.getElementById('choiceRecar').value
+    //localStorage.setItem('text', text);
+    localStorage.setItem('valueRecarga', valueR)
+    alert('Contrato de plano efetuado com sucesso.')
+    window.location.href = 'TechMove.html'
+ }
+}
+
+var salvarRecargaBoleto = function () {
+  //var select = document.getElementById('choicePlan');
+  //var option = select.options[select.selectedIndex];
+  var nomeBoleto = document.getElementById('usernameBoleto').value
+  var numeroBoleto = document.getElementById('numeroCardBoleto').value
+  if (nomeBoleto == 0 || numeroBoleto == 0) {
+    alert('Campo em branco. Favor preenchê-lo')
+  }
+  else {
+    var select = document.getElementById('choicePlan');
+    var option = select.options[select.selectedIndex];
+    var text = option.text
+    var value = document.getElementById('choicePlan').value
+    localStorage.setItem('text', text);
+    localStorage.setItem('value', value)
+    alert('Contrato de plano efetuado com sucesso.')
+    window.location.href = 'TechMove.html'
+ }
+}
+
+
 var select = document.querySelector('select');
 var para = document.querySelector('p');
 
@@ -7,24 +49,24 @@ document.getElementById("btnConfirmar").disabled = true;
 document.getElementById("btnCancelar").disabled = true;
 function setWeather() {
     var choice = select.value;
-    if (choice != 'vazio') {
+    if (choice != '0') {
         document.getElementById("btnConfirmar").disabled = false;
         document.getElementById("btnCancelar").disabled = false;
-        if (choice === '1') {
+        if (choice === '5') {
             para.textContent = 'Com esse valor você recarregará em seu cartão vinculado a sua conta o valor de "R$5,00", acumulativo e sem prazo de vencimento.';
-        } else if (choice === '2') {
+        } else if (choice === '10') {
             para.textContent = 'Com esse valor você recarregará em seu cartão vinculado a sua conta o valor de "R$10,00", acumulativo e sem prazo de vencimento.';
-        } else if (choice === '3') {
+        } else if (choice === '15') {
             para.textContent = 'Com esse valor você recarregará em seu cartão vinculado a sua conta o valor de "R$15,00", acumulativo e sem prazo de vencimento.';
-        } else if (choice === '4') {
+        } else if (choice === '20') {
             para.textContent = 'Com esse valor você recarregará em seu cartão vinculado a sua conta o valor de "R$20,00", acumulativo e sem prazo de vencimento.';
-        } else if (choice === '5') {
+        } else if (choice === '25') {
             para.textContent = 'Com esse valor você recarregará em seu cartão vinculado a sua conta o valor de "R$25,00", acumulativo e sem prazo de vencimento.';
-        } else if (choice === '6') {
+        } else if (choice === '50') {
             para.textContent = 'Com esse valor você recarregará em seu cartão vinculado a sua conta o valor de "R$50,00", acumulativo e sem prazo de vencimento.';
-        } else if (choice === '7') {
+        } else if (choice === '100') {
             para.textContent = 'Com esse valor você recarregará em seu cartão vinculado a sua conta o valor de "R$100,00", acumulativo e sem prazo de vencimento.';
-        }  else if (choice === '8') {
+        }  else if (choice === '200') {
             para.textContent = 'Com esse valor você recarregará em seu cartão vinculado a sua conta o valor de "R$200,00", acumulativo e sem prazo de vencimento.';
         } else {
             para.textContent = '';
@@ -36,19 +78,19 @@ function escolha () {
   var escolhaHTML = '';
 
     escolhaHTML = escolhaHTML + `
-    <h1 class="titulo-metodo" style="margin: 20px 130px">Métodos de pagamento</h1>
-    <div class="row" style="margin: 0px 100px">
+    <h1 class="titulo-metodo">Métodos de pagamento</h1>
+    <div id="caixa-choice" class="row">
       <div>
-      <h1 class="titulo-pag" style="font-size: medium; margin-left: 80px">Cartão</h1>
-      <a href="#"><img src="icons/cartaoPag.png" alt="" width="100" height="100" style="margin-left:50px" onclick="cartaoPag()"></a>
+      <h1 class="titulo-pag">Cartão</h1>
+      <a href="#"><img src="icons/cartaoPag.png" alt="" width="100" height="100" class="iconPag1"  onclick="cartaoPag()"></a>
       </div>
       <div>
-      <h1 class="titulo-pag" style="font-size: medium; margin-left: 80px">Boleto</h1>
-      <a href="#"><img src="icons/boleto.png" alt="" width="100" height="70" style="margin-top:30px; margin-left:50px" onclick="boletoPag()"></a>
+      <h1 class="titulo-pag">Boleto</h1>
+      <a href="#"><img src="icons/boleto.png" alt="" width="100" height="70" class="iconPag2" onclick="boletoPag()"></a>
       </div>
       <div>
-      <h1 class="titulo-pag" style="font-size: medium; margin-left: 80px">Paypal</h1>
-      <a href="#"><img src="icons/paypal.png" alt="" width="100" height="90" style="margin-top:10px; margin-left:50px" onclick="paypal()"></a>
+      <h1 class="titulo-pag">Paypal</h1>
+      <a href="#"><img src="icons/paypal.png" alt="" width="100" height="90" class="iconPag3" onclick="paypal()"></a>
       </div>
     </div>
     `
@@ -69,13 +111,13 @@ function cartaoPag () {
   var cartaoPagHTML = '';
 
     cartaoPagHTML = cartaoPagHTML + `
-    <article class="card-body" style="margin: 0px 120px">
+    <article class="card-body" >
     <div class="texto">
         <h4 class="card-title text-left" style="font-size: 30px">
         <b><center>Cartão de Crédito/Débito</center></b></h4>
     </div>
     <div class="col-12">
-        <form id="form-recarga" method="post" onsubmit="imprimeArecarga (this)">
+        <form id="form-recarga">
         <div class="grupo de controle">
             <label class="control-label"  for="username">Nome do titular do cartão:</label>
         <div class="controls">
@@ -85,7 +127,7 @@ function cartaoPag () {
         <div class="control-group">
             <label class="control-label" for="Numero">Numero do cartão:</label>
             <div class="controls">
-              <input type="text" id="email" name="Numero" placeholder="" class="input-xlarge">
+              <input type="text" id="numeroCard" name="Numero" placeholder="" class="input-xlarge">
             </div>
           </div>
           <div class="control-group">
@@ -144,7 +186,7 @@ function cartaoPag () {
                 <img src="elo.png" width="60" height="50"style="margin: 0px 5px;"/>
                 <img src="hipercard.png" width="60" height="50"style="margin: 0px 5px;"/>                           
               </div>       
-              <button class="btn btn-success">Recarregue agora</button>                               
+              <button class="btn btn-success" onclick="salvarRecarga()">Recarregue agora</button>                               
             </div>
           </div>
         </form>
@@ -167,22 +209,22 @@ function boletoPag () {
         <b><center>Boleto</center></b></h4>
     </div>
     <div class="col-12">
-        <form id="form-recarga" method="post" onsubmit="imprimeArecarga (this)">
+        <form id="form-recarga">
         <div class="grupo de controle">
             <label class="control-label"  for="username">Nome:</label>
         <div class="controls">
-         <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+         <input type="text" id="usernameBoleto" name="username" placeholder="" class="input-xlarge">
         </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="Numero">CPF:</label>
             <div class="controls">
-              <input type="text" id="email" name="Numero" placeholder="" class="input-xlarge">
+              <input type="text" id="numeroCardBoleto" name="Numero" placeholder="" class="input-xlarge">
             </div>
           </div>
           <div class="control-group" >
             <div class="controls">
-              <label class="checkbox" for="save_card" style="margin-left: 290px;">
+              <label class="checkbox" for="save_card">
                 <input type="checkbox" id="save_card" value="option1">
                 Salvar dados?
               </label>
@@ -190,7 +232,7 @@ function boletoPag () {
           </div>
           <div class="control-group">
             <div class="controls">
-              <button class="btn btn-success">Gerar Boleto</button>                               
+              <button class="btn btn-success"onclick="salvarRecargaBoleto()">Gerar Boleto</button>                               
             </div>
           </div>
         </form>
@@ -202,7 +244,7 @@ function boletoPag () {
   //document.getElementById('btn2').addEventListener('click', init);
   //elemMain.innerHTML = textoHTML;
 }
-/**/
+
 
 
   

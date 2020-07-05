@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li class="nav-item ativa" style="margin-top: 20%;">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="TM-Planos.html">
                     <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
                 </a>
             </li>
@@ -41,12 +41,15 @@
                     <center><img src="icons/recargapng.png" height="30px" weigth="35px"></center>
                 </a>
             </li>
-            <li class="nav-item ativa" style="margin-top: 20%;">
+            <!--<li class="nav-item ativa" style="margin-top: 20%;">
                 <a class="nav-link" href="perfil.html">
                     <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
                 </a>
-            </li>
+            </li>-->
         </ul>
+        <div id="saida">
+            <span id="btn_saida"></span>
+        </div>
     </header>
     <main class="main">
         <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
@@ -86,17 +89,17 @@
         </nav>
         <div class="container caixa-recarga">
             <div class="row-fluid">
-                <div class="col-lg-10 col-md-12 col-sm-10 col-xs-10">
-                    <div class="card card1" style="margin-left: 150px;">
+                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card card1">
                         <article class="card-body">
                             <div class="test">
                                 <h1>Planos Mensais</h1>
                                 <label for="weather">Selecione um plano: </label>
-                                <select id="weather" onchange="myFunction()">
-                                    <option id="p1" value="vazio">--Escolha um plano--</option>
-                                    <option value="Urbano">Urbano</option>
-                                    <option value="Interurbano">Interurbano</option>
-                                    <option value="Estadual">Estadual</option>
+                                <select id="choicePlan">
+                                    <option value="0" title="Sem Plano">--Escolha um plano--</option>
+                                    <option value="180" title="Urbano">Urbano</option>
+                                    <option value="340" title="Interurbano">Interurbano</option>
+                                    <option value="500" title="Estadual">Estadual</option>
                                 </select>
 
                                 <p></p>
@@ -107,16 +110,56 @@
                                 </div>
                             </div>
                             <div id="conteudo">
-
+                                <!--<input type="text" id="value">
+                                <input type="text" id="text">-->
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-2 menu">
+                    <a class="icon" href="TechMove.html">
+                        <img class="logo" src="icons/logotipo.png" height="50px" weigth="50px">
+                    </a>
+                </div>
+                <div class="col-2 menu">
+                    <a class="icon" href="TM-Planos.html">
+                        <img src="icons/cartao.png" height="35px" weigth="35px">
+                    </a>
+                </div>
+                <div class="col-2 menu">
+                    <a class="icon" href="TM-Avaliação.html">
+                        <img src="icons/contrato.png" height="25px" weigth="35px">
+                    </a>
+                </div>
+                <div class="col-2 menu">
+                    <a class="icon" href="TMRegistro.html">
+                        <img src="icons/perfil.png" height="30px" weigth="35px">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a class="icon" href="recarga.html">
+                        <img src="icons/recargapng.png" height="25px" weigth="35px">
+                    </a>
+                </div>
+            </div>
+        </footer>
 </body>
 <script src="test.js"></script>
+<script src="tm.js"></script>
 <script>
+    /* function initPage() {
+         if (!usuarioCorrente.login) {
+             document.getElementById('btn_saida').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " ";
+             document.getElementById('btn_logout').addEventListener('click', logoutUser);
+         }
+
+         // exibeUsuarios ();
+     }
+     window.addEventListener('load', initPage);*/
 </script>
 
 </html>

@@ -82,7 +82,9 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
     .main .card1 { width: 100%;}
     .main .card2 { width: 100%;}
     .main .card3 { width: 100%;}
+    .main .busca { display: none;}
     .footer{display:none !important;}
+    .movel { display: none;}
     
 }
 @media screen and (min-width: 992px) and (max-width: 1000px) {
@@ -97,6 +99,8 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
     .main .card3 { max-width: 500px; margin-left: 135px; margin-top: 20px; margin-bottom: 50px;}
     .footer{display:none !important;}
     .main .busca {display: none;}
+    .desktop {display: none;}
+    
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .header {display: none;}
@@ -109,6 +113,8 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
 
     .main .busca {display: none;}
     .footer{position: fixed; bottom: 0; z-index:999;}
+    .desktop {display: none;}
+    .movel #btn_saidaMovel {margin-left: 100px !important;}
 }
 
 @media screen and (min-width: 240px) and (max-width: 767px) {
@@ -124,5 +130,9 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
     .main .container .carrossel_ .carousel-inner{height: 250px;}
     .main .container .carrossel_ .carousel-inner .img_c{height: 250px;}
     .footer{position: fixed; bottom: 0; z-index:999;}
+    .desktop {display: none;}
+    .logoMovel {margin-left: 165px;}
 }
 /**/
+.form-group.botao a {color: white}
+.form-group.botao a:hover {color: white;}

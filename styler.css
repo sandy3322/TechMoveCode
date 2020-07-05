@@ -68,6 +68,8 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
     .footer{position: fixed; bottom: 0; z-index:999; width: 100%;}
     .footer .menu {width: 100%; margin-right: 11px !important; padding-bottom: 15px;}
     .main .busca {display: none;}
+    .main .container{margin-top: 30px !important;}
+    .main .container .row .trocarfoto{margin-left: -25px !important;}
 }
 
 @media screen and (min-width: 240px) and (max-width: 767px) {
@@ -80,5 +82,31 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
     .main .caixa-registro .icon { margin-left: 75px !important;}
     .footer{position: fixed; bottom: 0; z-index:999; padding-bottom: 10px !important;}
     .main .busca {display: none;}
+    .main .container{margin-top: 30px !important;}
+    .main .container .row .trocarfoto{margin-left: -25px !important;}
 }
+/*CSS Perfil*/
+.main .container{margin-top: 150px;}
+
+.main .container .row .col-4 img{width: 300px; border: 2px solid gray;}
+.main .container .row .trocarfoto{color: white;}
+
+.main .container .row .conteudo{font-family: Arial, Helvetica, sans-serif; font-size: larger;}
+.main .container .row .conteudo-nome{border: 1px solid gray; background-color: white; margin-top: 20px;}
+.main .container .row .conteudo-email{border: 1px solid gray; background-color: white; margin-top: 20px;}
+.main .container .row .conteudo-plano{border: 1px solid gray; background-color: white; margin-top: 20px;}
+.main .container .row .conteudo-saldo{border: 1px solid gray; background-color: white; margin-top: 20px;}
+.main .container .row .conteudo-cartao{border: 1px solid gray; background-color: white; margin-top: 100px;}
+.main .container .row .conteudo #cadastrar_cartao{margin-top: 20px; background-color: green; border-radius: 8px; color: white; border: 2px solid white;}
+.main .container .row .conteudo #perda_cartao{margin-top: 20px; background-color: green; border-radius: 8px; color: white; border: 2px solid white;}
+.main .container .row .avaliacoes{margin-top: 100px; color: white; font-weight: bolder; border-bottom: 1px solid white;}
+
+.main .container #btnSalvarImagens{color: white; background-color: green; border: 2px solid white; margin: 6px; border-radius: 5px;}
+.main .container #btnExibirImagens{color: white; background-color: green; border: 2px solid white; margin: 6px; border-radius: 5px;}
+
+.main .container #inputImage{background-color: black; border: 2px solid gray; border-radius: 5px;}
 /**/
+
+.av { background-color: grey; color: white; width: 400px; border-radius: 5px; margin-top: 10px; width: 330px; margin-bottom: 100px;}
+.av .text-cont { margin-left: 10px;}
+.av .text-titulo { margin-left: 10px;}

@@ -42,20 +42,20 @@
                     <center><img src="icons/recargapng.png" height="30px" weigth="35px"></center>
                 </a>
             </li>
-            <li class="nav-item ativa" style="margin-top: 20%;">
+            <!--<li class="nav-item ativa" style="margin-top: 20%;">
                 <a class="nav-link" href="perfil.html">
                     <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
                 </a>
-            </li>
+            </li>-->
         </ul>
-        <div id="saida">
+        <div id="saida" class="desktop">
             <span id="btn_saida"></span>
         </div>
     </header>
     <main class="main">
         <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-dark bg-dark"
             style="background-color: black !important; height: 70px;">
-            <a href="TechMove.html"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
+            <a href="TechMove.html" class="logoMovel"><img src="icons/logotipo.png" alt="" height="50px" weigth="50px"></a>
             <form class="form-inline busca">
                 <input id="txtPesquisa" class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
                     aria-label="Buscar" style="background-color: black; width: 600px; border: 0px;">
@@ -63,15 +63,20 @@
                     style="border: none; background-color: black;"><img src="icons/lupab.png" alt="" height="25px"
                         weigth="250px"></button>
                 <button id="btnFav" class="btn btn-outline-success " type="submit"
-                    style="border: none; background-color: black;"><svg  width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                      </svg></button>
+                    style="border: none; background-color: black;"><svg width="30px" height="30px" viewBox="0 0 16 16"
+                        class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                    </svg></button>
                 <div id="btnFonte">
                     <ul>
 
                     </ul>
                 </div>
             </form>
+            <div id="saida" class="movel">
+                <span id="btn_saidaMovel"></span>
+            </div>
             <div class="dropdown">
 
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
@@ -185,7 +190,7 @@
                                         mais?
                                         Tudo isso por apenas R$180,00... </p>
                                     <div class="form-group botao" style="background-color: #c47c34;">
-                                        <button type="submit" class="btn btn-block"><b>Assine já</b></button>
+                                        <a href="TM-Planos.html"><button type="submit" class="btn btn-block"><b>Assine já</b></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +208,7 @@
                                         aumento na quantidade de avaliações e
                                         tudo isso por R$340,00.</p>
                                     <div class="form-group botao" style="background-color: #64646b;">
-                                        <button type="submit" class="btn btn-block"><b>Assine já</b></button>
+                                        <a href="TM-Planos.html"><button type="submit" class="btn btn-block"><b>Assine já</b></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +226,7 @@
                                         em créditos, isso mesmo, R$600 reais pelo
                                         valor de R$500 em dinheiro.</p>
                                     <div class="form-group botao" style="background-color: #daa520;">
-                                        <button type="submit" class="btn btn-block"><b>Assine já</b></button>
+                                        <a href="TM-Planos.html"><button type="submit" class="btn btn-block"><b>Assine já</b></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -240,12 +245,12 @@
                 </a>
             </div>
             <div class="col-2">
-                <a class="icon" href="#">
+                <a class="icon" href="TM-Planos.html">
                     <img src="icons/cartao.png" height="35px" weigth="35px">
                 </a>
             </div>
             <div class="col-2">
-                <a class="icon" href="#">
+                <a class="icon" href="TM-Avaliação.html">
                     <img src="icons/contrato.png" height="25px" weigth="35px">
                 </a>
             </div>
@@ -255,8 +260,8 @@
                 </a>
             </div>
             <div class="col-2">
-                <a class="icon" href="#">
-                    <img src="icons/mais.png" height="25px" weigth="35px">
+                <a class="icon" href="recarga.html">
+                    <img src="icons/recargapng.png" height="25px" weigth="35px">
                 </a>
             </div>
         </div>
@@ -278,6 +283,7 @@
             if (!usuarioCorrente.login) {
                 document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nomeC != undefined ? "Olá " + usuarioCorrente.nomeC + ", seja bem-vindo!" : " ";
                 document.getElementById('btn_saida').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " ";
+                document.getElementById('btn_saidaMovel').innerHTML = usuarioCorrente.nomeC != undefined ? `<a href="#" id="btn_logout" style="position: absolute; bottom: 15px; left: 26px" ><img src="icons/saida.png" alt="" height="30px" width="30px"></a>` : " ";
                 document.getElementById('btn_logout').addEventListener('click', logoutUser);
             }
 
@@ -286,6 +292,9 @@
         window.addEventListener('load', initPage);
         /**/
 
+    </script>
+    <script scr="test.js"></script>
+    <script>
     </script>
     <script src="pesquisa.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

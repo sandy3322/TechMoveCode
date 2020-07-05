@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png"/>
-    <title> TECHMOVE - Home </title>
+    <link rel="shortcut icon" href="icons/logotipo.png" type="image/x-png" />
+    <title> TECHMOVE - Cartão </title>
     <link rel="stylesheet" href="TMCartao.css">
 
 </head>
@@ -23,7 +23,7 @@
                 </a>
             </li>
             <li class="nav-item ativa" style="margin-top: 20%;">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="TM-Planos.html">
                     <center><img src="icons/cartao.png" height="35px" weigth="35px"></center>
                 </a>
             </li>
@@ -42,11 +42,11 @@
                     <center><img src="icons/recargapng.png" height="30px" weigth="35px"></center>
                 </a>
             </li>
-            <li class="nav-item ativa" style="margin-top: 20%;">
+            <!--<li class="nav-item ativa" style="margin-top: 20%;">
                 <a class="nav-link" href="perfil.html">
                     <center><img src="icons/mais.png" height="25px" weigth="35px"></center>
                 </a>
-            </li>
+            </li>-->
         </ul>
         <div id="saida">
             <span id="btn_saida"></span>
@@ -63,7 +63,7 @@
                         src="icons/lupab.png" alt="" height="25px" weigth="250px"></button>
             </form>
             <div class="dropdown">
-                
+
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     style="background-color: black; border: none">
@@ -71,14 +71,19 @@
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
-                    <a class="dropdown-item" href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/facebook.png" height="30px" weigth="35px"></a>
-                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/instagra.png" height="30px" weigth="35px"></a>
-                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/twitter.png" height="30px" weigth="35px"></a>
-                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing" style="background-color: black; padding-left: 27px;"><img
-                            src="icons/linkedin.png" height="30px" weigth="35px"></a>
+                    <a class="dropdown-item"
+                        href="https://www.facebook.com/Tech-Move-108482200863886/?modal=admin_todo_tour&ref=admin_to_do_step_controller"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/facebook.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.instagram.com/tech_movetm/?hl=pt-br"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/instagra.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://twitter.com/TechMove4?s=09"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/twitter.png" height="30px"
+                            weigth="35px"></a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/feed/?trk=onboarding-landing"
+                        style="background-color: black; padding-left: 27px;"><img src="icons/linkedin.png" height="30px"
+                            weigth="35px"></a>
                     <a class="dropdown-item" href="#" style="background-color: black; padding-left: 27px;"><img
                             src="icons/google +.png" height="30px" weigth="35px"></a>
                 </div>
@@ -91,33 +96,42 @@
                         <article class="card-body">
                             <div class="texto">
                                 <h4 class="card-title text-left" style="font-size: 30px">
-                                <b><center>Entrar</center></b></h4>
+                                    <b>
+                                        <center>Entrar</center>
+                                    </b></h4>
                             </div>
                             <div class="col-12">
                                 <form id="form-cartao" class="form" method="POST" onsubmit="cartaoUser(this)">
-                                <div class="row">
-                                    <div class="form-group input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="text_Solicitar">
-                                            <p>Solicite seu cartão aqui!</p>
-                                        </div>
-                                        <div class="botao_Solicitar">
-                                            <button id="btn_Solicitar" type="submit" class="btn" style="color: white;" value="submit"> Solicitar
-                                            </button>
-                                        </div>
-                                        <div class="tela">
+                                    <div class="row">
+                                        <div class="form-group input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="text_Solicitar">
+                                                <p>Solicite seu cartão aqui!</p>
+                                            </div>
+                                            <div class="botao_Solicitar">
+                                                <button id="btn_Solicitar" type="submit" class="btn"
+                                                    style="color: white;" value="submit"> Solicitar
+                                                </button>
+                                            </div>
+                                            <div class="tela">
 
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="numerocard">
-                                    <input name="numeroCard" id="numeroCard" class="form-control" placeholder="Número do Cartão" type="text-info">
-                                </div>
-                                <div class="senhacard">
-                                    <input name="senhaCard" id="senhacard" class="form-control" placeholder="Senha" type="text">    
-                                </div>
-                                <div><p style="color: white;">*A senha deve ser preenchida conforme o cadastrado na conta*</p></div>
+                                    <!--<div class="numerocard">
+                                        <input name="numeroCard" id="numeroCard" class="form-control"
+                                            placeholder="Número do Cartão" type="text-info">
+                                    </div>-->
+                                    <div class="senhacard">
+                                        <input name="senhaCard" id="senhaCard" class="form-control" placeholder="Senha"
+                                            type="password">
+                                    </div>
+                                    <div>
+                                        <p style="color: white;">*A senha deve ser preenchida conforme o cadastrado na
+                                            conta*</p>
+                                    </div>
                                     <div class="form-group botao">
-                                        <button id="btn_Entrar" type="submit" class="btn btn-block" style="color: white;"> Entrar
+                                        <button id="btn_Entrar" type="submit" class="btn btn-block"
+                                            style="color: white;"> Verificar
                                         </button>
                                     </div>
                                 </form>
@@ -151,36 +165,45 @@
                 </a>
             </div>
             <div class="col-2">
-                <a class="icon" href="#">
-                    <img src="icons/mais.png" height="25px" weigth="35px">
+                <a class="icon" href="recarga.html">
+                    <img src="icons/recargapng.png" height="25px" weigth="35px">
                 </a>
             </div>
         </div>
     </footer>
     <script src="TMCartao.js"></script>
+    <script src="tm.js"></script>
     <script>
-        function processaFormLogin (event) {
+        document.getElementById("btn_Solicitar").disabled = true;
+        function processaFormLogin(event) {
 
-            event.preventDefault ();
+            event.preventDefault();
 
-            var NCard = document.getElementById('numeroCard').value;
-            var SCard = document.getElementById('senhacard').value;
-
-            resultEntrar = cartaoUser(NCard, SCard);
+            //var NCard = document.getElementById('numeroCard').value;
+            var SCard = document.getElementById('senhaCard').value;
+            
+            resultEntrar = cartaoUser(SCard);
             if (resultEntrar) {
-                window.location.href = 'TechMove.html' /*, 'TM-Avaliação.html'*/;
+                //window.location.href = 'perfil.html' /*, 'TM-Avaliação.html'*/;
+                alert('Acesso permitido, solicite o cartão.')
+                document.getElementById("btn_Solicitar").disabled = false;
             }
             else {
-                if(NCard == 0 || SCard == 0){
-                    alert('Campos em branco. Favor preenchê-lo')
+                if (SCard == 0) {
+                    alert('Campo em branco. Favor preenchê-lo.')
                 }
                 else {
-                alert ('Número do cartão ou senha incorretos.');
+                    /*if (NCard != db_cartao.cartoes[0].numeroCartao || SCard != db_usuarios.usuarios.senhaC1) {
+                        alert('Número ou senha invalidos.')
+                    }
+                    else {*/
+                        alert('Senha incorreta. Tente novamente.');
+                    //}
                 }
             }
         }
-        function saveCard (event) {
-            event.preventDefault ();
+        function saveCard(event) {
+            event.preventDefault();
 
             //let nomeC = document.getElementById('').value;
             //let emailC = document.getElementById('emailcad').value;
@@ -191,22 +214,22 @@
             //}
             //else {
             adcCodigo();
-            alert ('Cartão gerado com sucesso. Atualize a página para ter acesso.')
-           // }
+            alert('Cartão gerado com sucesso. Acesse o perfil.')
+            // }
         }
-        document.getElementById ('form-cartao').addEventListener('submit', processaFormLogin);
-        document.getElementById ('btn_Solicitar').addEventListener ('click', saveCard);
+        document.getElementById('form-cartao').addEventListener('submit', processaFormLogin);
+        document.getElementById('btn_Solicitar').addEventListener('click', saveCard);
         /**/
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
