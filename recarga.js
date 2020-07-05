@@ -28,11 +28,11 @@ var salvarRecargaBoleto = function () {
     alert('Campo em branco. Favor preenchê-lo')
   }
   else {
-    var select = document.getElementById('choicePlan');
+    var select = document.getElementById('choiceRecar');
     var option = select.options[select.selectedIndex];
-    var text = option.text
-    var value = document.getElementById('choicePlan').value
-    localStorage.setItem('text', text);
+    //var text = option.text
+    var value = document.getElementById('choiceRecar').value
+    //localStorage.setItem('text', text);
     localStorage.setItem('value', value)
     alert('Contrato de plano efetuado com sucesso.')
     window.location.href = 'TechMove.html'
@@ -244,7 +244,6 @@ function boletoPag () {
   //document.getElementById('btn2').addEventListener('click', init);
   //elemMain.innerHTML = textoHTML;
 }
-
-
+/**/
 
   

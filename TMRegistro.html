@@ -294,13 +294,13 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <h1 style="color: white;">Perfil</h1>
-                    <div id="tela"></div>
+                    <div id="tela" class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
                     <div class="trocarfoto">
                         Coloque sua foto se ainda não houver:<input id="inputImage" type="file">
                     </div>
                     <div>
-                        <button id="btnSalvarImagens">Salvar</button>
-                        <button id="btnExibirImagens">Trocar</button>
+                        <button id="btnSalvarImagens" onclick="salvarImagens()">Salvar</button>
+                        <button id="btnExibirImagens" onclick="exibirImagens()">Trocar</button>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -355,10 +355,11 @@
 
                 let item = JSON.parse(localStorage.getItem('db_cartao')).cartoes[0].numeroCartao;
                 document.getElementById('saveCartao').innerHTML = item != undefined ? item : " ";
-
+                let textoPlanos = localStorage.getItem('text');
+                document.getElementById('savePlano').innerHTML = textoPlanos != undefined ? textoPlanos : " ";
 
                 //var salvarSaldo = JSON.parse(localStorage.getItem('db_saldo'))
-                let vp = localStorage.getItem('value')
+                let vp = localStorage.getItem('valuePlano')
                 let rp = localStorage.getItem('valueRecarga')
                 //let invertVP = parseFloat(vp);
 
@@ -380,7 +381,7 @@
                 if (invertVP > 0) {
                     total += invertVP
                 }
-                if (invertRP > 0){
+                if (invertRP > 0) {
                     total += invertRP
                 }
 
@@ -401,14 +402,68 @@
                     </div>`;
                     document.getElementById('saveAv').innerHTML = text != undefined ? text : " "
                     //Plano
-                    let p = localStorage.getItem('text')
+                    
                     //document.getElementById('savePlano').value = p;
-                    document.getElementById('savePlano').innerHTML = p != undefined ? p : " ";
+                   
                 }
             }
 
         }
         window.addEventListener('load', initPage);
+    </script>
+    <script>
+        function salvarImagens() {
+            let inputImg = document.getElementById('inputImage');
+
+            if (inputImg.files && inputImg.files[0]) {
+                var readerImg = new FileReader();
+
+                readerImg.onload = function (img) {
+                    let imagens = [];
+
+                    // Tenta carregar o array de imagens do Local Storage
+                    let db_imgs = localStorage.getItem('db_imgs');
+                    if (db_imgs) {
+                        imagens = JSON.parse(db_imgs);
+                    }
+
+                    // Insere a imagem no array
+                    let novaImagem = { "imagem": img.target.result };
+                    imagens.push(novaImagem);
+
+                    // Salvar o array de imagens no localStorage
+                    localStorage.setItem('db_imgs', JSON.stringify(imagens));
+
+                };
+
+                readerImg.readAsDataURL(inputImg.files[0]);
+            }
+
+        }
+
+        function exibirImagens() {
+            let tela = document.getElementById('tela');
+            let textoHTML = '';
+
+            // Fazer alguma coisa montando o textoHTML
+
+            // Tenta carregar o array de imagens do Local Storage
+            let imagens = [];
+            let db_imgs = localStorage.getItem('db_imgs');
+            if (db_imgs) {
+                imagens = JSON.parse(db_imgs);
+            };
+
+            for (i = 0; i < 1; i++) {
+                textoHTML += `<div class="box-imagem"><img src="${imagens[i].imagem}"></div>`;
+            }
+
+
+            // Mostrar o código na div tela
+            tela.innerHTML = textoHTML
+
+        }
+
     </script>
 
 </body>

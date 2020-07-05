@@ -74,7 +74,8 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
     -webkit-border-radius: 3px;
 }
 @media screen and (min-width: 1367px) and (max-width: 1920px){
-    .footer{display: none !important;}
+    .footer {display: none !important;}
+    .movel {display:none}
 }
 @media screen and (min-width: 1001px) and (max-width: 1367px){
     .header{width: 70px !important;}
@@ -136,3 +137,4 @@ body .footer .row .col-2 .logo{height: 35px; width: 30px;}
 /**/
 .form-group.botao a {color: white}
 .form-group.botao a:hover {color: white;}
+/**/

@@ -47,8 +47,8 @@ function adcPlanos(textPlan, valuePlan) {
 localStorage.setItem('value', 0);
 }*/
 var salvarPlanos = function () {
-  //var select = document.getElementById('choicePlan');
-  //var option = select.options[select.selectedIndex];
+  var select = document.getElementById('choicePlan');
+  var option = select.options[select.selectedIndex];
   var nomeCD = document.getElementById('username').value
   var numeroCD = document.getElementById('numeroCard').value
   var senhaCD = document.getElementById('password_confirm').value
@@ -59,9 +59,9 @@ var salvarPlanos = function () {
     var select = document.getElementById('choicePlan');
     var option = select.options[select.selectedIndex];
     var text = option.text
-    var value = document.getElementById('choicePlan').value
+    var valuePlano = document.getElementById('choicePlan').value
     localStorage.setItem('text', text);
-    localStorage.setItem('value', value)
+    localStorage.setItem('valuePlano', valuePlano)
     alert('Contrato de plano efetuado com sucesso.')
     window.location.href = 'TechMove.html'
  }
@@ -80,9 +80,9 @@ var salvarPlanosBoleto = function () {
     var select = document.getElementById('choicePlan');
     var option = select.options[select.selectedIndex];
     var text = option.text
-    var value = document.getElementById('choicePlan').value
+    var valuePlano = document.getElementById('choicePlan').value
     localStorage.setItem('text', text);
-    localStorage.setItem('value', value)
+    localStorage.setItem('valuePlano', valuePlano)
     alert('Contrato de plano efetuado com sucesso.')
     window.location.href = 'TechMove.html'
  }
@@ -106,11 +106,11 @@ function setWeather() {
   if (choice != '0') {
     document.getElementById("btnConfirmar").disabled = false;
     document.getElementById("btnCancelar").disabled = false;
-    if (choice === '180') {
+    if (choice === '200') {
       para.textContent = 'Assine agora o plano Urbano "TechMove", com ele você ganha R$200,00 em créditos no seu cartão para andar com o transporte público que quiser, seja patinete, bicicleta, ônibus ou metrô... Quer saber mais? Tudo isso por apenas R$180,00 mensais...';
-    } else if (choice === '340') {
+    } else if (choice === '400') {
       para.textContent = 'Assine hoje, o plano InterUrbano "TechMove", mais completo, para você que usa o transporte todo dia! Com esse plano você recebe R$400 reais em créditos mensais acumuláveis, e possui aumento na quantidade de avaliações e tudo isso por R$340,00 mensais.';
-    } else if (choice === '500') {
+    } else if (choice === '600') {
       para.textContent = 'Adquira já o plano Estadual, você tem acesso a tudo, e os créditos. Com o Plano Estadual TechMove você consegue fazer viagens interestaduais e além de possuir R$600,00 em créditos, isso mesmo, R$600 reais pelo valor de R$500 em dinheiro por mês.';
     } else {
       para.textContent = '';
@@ -292,5 +292,6 @@ function boletoPag() {
   //document.getElementById('btn2').addEventListener('click', init);
   //elemMain.innerHTML = textoHTML;
 }
-
+/**/
+/**/
 /**/
